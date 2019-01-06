@@ -1,4 +1,4 @@
-package br.edu.ifpb.poo.ajr.ui;
+package ui;
 
 import javax.swing.*;
 import java.awt.*;
