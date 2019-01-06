@@ -1,7 +1,6 @@
-package br.edu.ifpb.poo.ajr;
+package br.edu.ifpb.poo.ajr.ui;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 
 public class MainFrame extends JFrame {
@@ -11,7 +10,7 @@ public class MainFrame extends JFrame {
         super("Delivery");
 
         setLayout(new FlowLayout());
-        setSize(1080, 762);
+        setSize(1080, 768);
         setBackground(Color.WHITE);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);

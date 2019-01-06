@@ -1,4 +1,7 @@
-package br.edu.ifpb.poo.ajr;
+package br.edu.ifpb.poo.ajr.common;
+
+import br.edu.ifpb.poo.ajr.common.Restaurante;
+import br.edu.ifpb.poo.ajr.ui.MainFrame;
 
 import javax.swing.SwingUtilities;
 
