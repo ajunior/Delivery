@@ -1,19 +1,31 @@
 package ui;
 
+import mdlaf.*;
+import mdlaf.utils.MaterialColors;
+
 import javax.swing.*;
 import java.awt.*;
-import java.util.concurrent.Flow;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 
 public class MainFrame extends JFrame {
-    private JButton btn;
-    private MenuBar menu;
 
     public MainFrame () {
         super("Delivery");
 
+        try {
+            UIManager.setLookAndFeel(new MaterialLookAndFeel());
+        } catch (UnsupportedLookAndFeelException e){
+            e.printStackTrace();
+        }
+
+        //  Configuração da Janela principal da aplicação.
         setLayout(new FlowLayout());
         setSize(1080, 768);
-        setBackground(Color.WHITE);
+        setMaximumSize(new Dimension( 1080, 768));
+        setMinimumSize(new Dimension(1080, 768));
+        setBackground(MaterialColors.WHITE);
         setJMenuBar(criarMenu());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
@@ -26,8 +38,23 @@ public class MainFrame extends JFrame {
         JMenu menuApp = new JMenu("Aplicativo");
         JMenuItem menuAppConfig = new JMenuItem("Configurações");
         menuApp.add(menuAppConfig);
+
         JMenuItem menuAppSair = new JMenuItem("Sair");
+        menuAppSair.setMnemonic(KeyEvent.VK_S);
+        menuAppSair.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                int action = JOptionPane.showConfirmDialog(MainFrame.this,
+                        "Tem certeza que deseja sair da aplicação?",
+                        "Confirmação",
+                        JOptionPane.OK_CANCEL_OPTION);
+
+                if (action == JOptionPane.OK_OPTION)
+                    System.exit(0);
+            }
+        });
         menuApp.add(menuAppSair);
+
         menuBar.add(menuApp);
 
         // MENU CLIENTE
