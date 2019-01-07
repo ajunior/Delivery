@@ -2,7 +2,6 @@ package ui;
 
 import mdlaf.*;
 import mdlaf.utils.MaterialColors;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -25,6 +24,8 @@ public class MainFrame extends JFrame {
         setSize(1080, 768);
         setMaximumSize(new Dimension( 1080, 768));
         setMinimumSize(new Dimension(1080, 768));
+        setLocationRelativeTo(null);
+        setResizable(false);
         setBackground(MaterialColors.WHITE);
         setJMenuBar(criarMenu());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -33,6 +34,7 @@ public class MainFrame extends JFrame {
 
     private JMenuBar criarMenu() {
         JMenuBar menuBar = new JMenuBar();
+        SobreFrame sobre = new SobreFrame();
 
         // MENU APLICATIVO
         JMenu menuApp = new JMenu("Aplicativo");
@@ -99,7 +101,15 @@ public class MainFrame extends JFrame {
         JMenu menuAjuda = new JMenu("Ajuda");
         JMenuItem menuAjudaAjuda = new JMenuItem("Ajuda");
         menuAjuda.add(menuAjudaAjuda);
+
         JMenuItem menuAjudaSobre = new JMenuItem("Sobre");
+        menuAjudaSobre.setMnemonic(KeyEvent.VK_S);
+        menuAjudaSobre.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                sobre.setVisible(true);
+            }
+        });
         menuAjuda.add(menuAjudaSobre);
         menuBar.add(menuAjuda);
 
