@@ -2,6 +2,11 @@ package ui;
 
 import mdlaf.*;
 import mdlaf.utils.MaterialColors;
+
+import fachada.Fachada;
+import modelo.Produto;
+import modelo.Cliente;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -17,6 +22,23 @@ public class MainFrame extends JFrame {
             UIManager.setLookAndFeel(new MaterialLookAndFeel());
         } catch (UnsupportedLookAndFeelException e){
             e.printStackTrace();
+        }
+
+        try{
+            //  pre-cadastro
+            Produto p;
+            p = Fachada.cadastrarProduto("Pepsi 2L", 6.00);
+            p = Fachada.cadastrarProduto("Guaraná Antarctica 2L", 7.00);
+            p = Fachada.cadastrarProduto("Coca-Cola 2L", 8.20);
+            p = Fachada.cadastrarProduto("Coca-Cola Lata 300ml", 3.50);
+            p = Fachada.cadastrarProduto("Pizza Grande - 4 Queijos", 27.90);
+            Cliente c;
+            c = Fachada.cadastrarCliente("999440111", "Adjamilton Junior", "jr@ieee.org", "Rua Pero Vaz de Caminha 455, 13 de Maio.");
+            c = Fachada.cadastrarCliente("988756525", "Deborah Felix", "debh@gmail.com", "Av. Epitacio Pessoa 4096, Tambauzinho");
+            System.out.println("pre-cadastro concluido");
+
+        } catch (Exception e){
+            System.out.println(e.getMessage());
         }
 
         //  Configuração da Janela principal da aplicação.

@@ -1,18 +1,21 @@
-package common;
+package modelo;
+
+import java.util.ArrayList;
 
 public class Cliente {
-    private String nome;
     private String telefone;
+    private String nome;
     private String email;
     private String endereco;
+    private ArrayList<Pedido> pedidos;
 
     public Cliente () {
         // Empty
     }
 
-    public Cliente (String nome, String telefone, String email, String endereco) {
-        this.nome = nome;
+    public Cliente (String telefone, String nome, String email, String endereco) {
         this.telefone = telefone;
+        this.nome = nome;
         this.email = email;
         this.endereco = endereco;
     }

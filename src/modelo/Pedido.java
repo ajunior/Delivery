@@ -1,14 +1,16 @@
-package common;
+package modelo;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class Pedido {
     private int id;
     private LocalDateTime data;
-    private Double total;
+    private double total;
     private String entregador;
-    private Boolean fechado;
+    private boolean fechado;
     private ArrayList<Produto> produtos;
     private Cliente cliente;
 
@@ -16,14 +18,10 @@ public class Pedido {
         // Empty
     }
 
-    public Pedido (int id, LocalDateTime data, Double total, String entregador, Boolean fechado,
-                   ArrayList<Produto> produtos, Cliente cliente) {
+    public Pedido (int id, Cliente cliente) {
         this.id = id;
-        this.data = data;
-        this.total = total;
-        this.entregador = entregador;
-        this.fechado = fechado;
-        this.produtos = produtos;
+        this.data = LocalDateTime.now();
+        this.fechado = false;
         this.cliente = cliente;
     }
 
@@ -35,9 +33,9 @@ public class Pedido {
         return this.id;
     }
 
-    public void setData (LocalDateTime data) {
-        this.data = data;
-    }
+    //public void setData (LocalDateTime data) {
+    //    this.data = data;
+    //}
 
     public LocalDateTime getData () {
         return this.data;
@@ -59,16 +57,16 @@ public class Pedido {
         return this.entregador;
     }
 
-    public void setFechado (Boolean fechado) {
-        this.fechado = fechado;
+    public void setFechado () {
+        this.fechado = true;
     }
 
     public Boolean getFechado () {
         return this.fechado;
     }
 
-    public void setProdutos (ArrayList<Produto> produtos) {
-        this.produtos = produtos;
+    public void addProduto (Produto p) {
+        this.produtos.add(p);
     }
 
     public ArrayList<Produto> getProdutos () {
@@ -85,7 +83,7 @@ public class Pedido {
 
     @Override
     public String toString () {
-        //return this.id + ' ' + this.data + ' ' + this.total + ' ' + this.entregador + ' ' + this.fechado;
-        return "teste";
+        return "" + this.id + ' ' + this.data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + ' ' + this.total + ' ' + this.entregador + ' ' + this.fechado;
+        //return "teste";
     }
 }

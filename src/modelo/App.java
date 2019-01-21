@@ -1,14 +1,16 @@
-package common;
+package modelo;
 
-import ui.MainFrame;
 import fachada.Fachada;
+import repositorio.Restaurante;
+import ui.MainFrame;
+
 import javax.swing.SwingUtilities;
 
 public class App {
 
     public static void main(String[] args) {
+        new Fachada();
 
-        // iniciaRestaurante();
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
