@@ -53,7 +53,7 @@ public class Restaurante {
     public ArrayList<Produto> localizarProdutos(String nome){
         ArrayList<Produto> produtos = new ArrayList<Produto>();
         for(Produto p : this.produtos){
-            if(p.getNome().contains(nome))
+            if(p.getNome().toLowerCase().contains(nome.toLowerCase()))
                 produtos.add(p);
         }
         return produtos;
@@ -99,11 +99,13 @@ public class Restaurante {
         return p;
     }
 
-    public boolean remover(Pedido p) {
-        if (!p.getFechado())
-            return this.produtos.remove(p);
+    public Pedido remover(Pedido p) {
+        if (!p.getFechado()) {
+            this.produtos.remove(p);
+            return p;
+        }
 
-        return false;
+        return null;
     }
 
     public Pedido localizarPedidoAberto(String telefone) {

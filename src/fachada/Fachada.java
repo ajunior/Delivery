@@ -155,7 +155,7 @@ public class Fachada {
     //  CANCELAR PEDIDO
     // -------------------------------------
 
-    public static void cancelarPedido(String telefone) throws Exception {
+    public static Pedido cancelarPedido(String telefone) throws Exception {
         Cliente c = restaurante.localizarCliente(telefone);
         if (c == null)
             throw new Exception("Cancelar Pedido: Cliente não cadastrado.");
@@ -164,7 +164,7 @@ public class Fachada {
         if (p == null)
             throw new Exception("Cancelar Pedido: Não há pedido aberto para este cliente.");
 
-        restaurante.remover(p);
+        return restaurante.remover(p);
     }
 
     // -------------------------------------

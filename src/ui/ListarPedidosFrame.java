@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 public class ListarPedidosFrame extends JDialog {
     private JPanel contentPanel;
+    private JLabel lblListagem;
     private JLabel lblQtdePedidos;
     private JLabel lblQtde;
     private JTextArea textAreaListaPedidos;
@@ -31,8 +32,12 @@ public class ListarPedidosFrame extends JDialog {
         setContentPane(contentPanel);
         contentPanel.setLayout(null);
 
+        lblListagem = new JLabel("Listagem de Pedidos:");
+        lblListagem.setBounds(10, 10, 150, 20);
+        contentPanel.add(lblListagem);
+
         textAreaListaPedidos = new JTextArea();
-        textAreaListaPedidos.setBounds(10, 10, 565, 400);
+        textAreaListaPedidos.setBounds(10, 30, 565, 390);
         contentPanel.add(textAreaListaPedidos);
 
         lblQtdePedidos = new JLabel("Quantidade de Pedidos:");
@@ -46,7 +51,7 @@ public class ListarPedidosFrame extends JDialog {
         ArrayList<Pedido> resultado = Fachada.listarPedidos();
         lblQtde.setText(Integer.toString(resultado.size()));
 
-        String texto = "Listagem de Pedidos: \n";
+        String texto = "";
 
         if (resultado.isEmpty())
             texto += "Nenhum pedido cadastrado\n";

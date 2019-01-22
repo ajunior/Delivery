@@ -21,7 +21,7 @@ public class AbrirPedidoFrame extends JDialog {
     public AbrirPedidoFrame () {
         setLayout(new FlowLayout());
         setModal(true);
-        setSize(420, 180);
+        setSize(420, 140);
         setTitle("Abrir Pedido");
         setResizable(false);
         setLocationRelativeTo(null);
@@ -55,7 +55,9 @@ public class AbrirPedidoFrame extends JDialog {
                         Pedido p = Fachada.abrirPedido(telefone);
 
                         if (p != null)
-                            JOptionPane.showConfirmDialog(null,"Pedido aberto com sucesso.", "Confirmação", JOptionPane.DEFAULT_OPTION);
+                            JOptionPane.showConfirmDialog(null,
+                                    "Pedido aberto com sucesso.\nID do Pedido: " + p.getId() + ".",
+                                    "Confirmação", JOptionPane.DEFAULT_OPTION);
                     }
 
                     textFieldTelefone.setText("");
@@ -66,7 +68,7 @@ public class AbrirPedidoFrame extends JDialog {
                 }
             }
         });
-        btnAbrirPedido.setBounds(10, 100, 120, 24);
+        btnAbrirPedido.setBounds(10, 60, 120, 24);
         contentPanel.add(btnAbrirPedido);
     }
 }

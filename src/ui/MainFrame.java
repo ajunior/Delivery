@@ -35,6 +35,7 @@ public class MainFrame extends JFrame {
             Cliente c;
             c = Fachada.cadastrarCliente("999440111", "Adjamilton Junior", "jr@ieee.org", "Rua Pero Vaz de Caminha 455, 13 de Maio.");
             c = Fachada.cadastrarCliente("988756525", "Deborah Felix", "debh@gmail.com", "Av. Epitacio Pessoa 4096, Tambauzinho");
+            Fachada.abrirPedido("999440111");
             System.out.println("pre-cadastro concluido");
 
         } catch (Exception e){
@@ -66,6 +67,8 @@ public class MainFrame extends JFrame {
         ListarPedidosFrame listarpedidos = new ListarPedidosFrame();
         ListarPedidosPorClienteFrame listarpedidosporcliente = new ListarPedidosPorClienteFrame();
         ConsultarPedidoFrame consultarpedido = new ConsultarPedidoFrame();
+        CancelarPedidoFrame cancelarpedido = new CancelarPedidoFrame();
+        //FecharPedidoFrame fecharpedido = new FecharPedidoFrame();
 
         // MENU APLICATIVO
         JMenu menuApp = new JMenu("Aplicativo");
@@ -180,16 +183,30 @@ public class MainFrame extends JFrame {
 
         JMenuItem menuPedidoCancelar = new JMenuItem("Cancelar");
         menuPedido.add(menuPedidoCancelar);
+        menuPedidoCancelar.setMnemonic(KeyEvent.VK_R);
+        menuPedidoCancelar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cancelarpedido.setVisible(true);
+            }
+        });
+
         JMenuItem menuPedidoFechar = new JMenuItem("Fechar");
         menuPedido.add(menuPedidoFechar);
         menuBar.add(menuPedido);
+        menuPedidoFechar.setMnemonic(KeyEvent.VK_F);
+        menuPedidoFechar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //fecharpedido.setVisible(true);
+            }
+        });
 
         // MENU RELATÓRIO
         JMenu menuRelatorio = new JMenu("Relatório");
         JMenuItem menuRelatorioArrecadacao = new JMenuItem("Arrecadação");
         menuRelatorio.add(menuRelatorioArrecadacao);
         menuBar.add(menuRelatorio);
-
         menuRelatorioArrecadacao.setMnemonic(KeyEvent.VK_A);
         menuRelatorioArrecadacao.addActionListener(new ActionListener() {
             @Override
