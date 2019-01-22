@@ -3,8 +3,6 @@ package ui;
 import fachada.Fachada;
 import modelo.Produto;
 
-import mdlaf.utils.MaterialColors;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -27,7 +25,7 @@ public class CadastrarProdutoFrame extends JDialog {
         setTitle("Cadastrar Produto");
         setResizable(false);
         setLocationRelativeTo(null);
-        setBackground(MaterialColors.WHITE);
+        //setBackground(MaterialColors.WHITE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();

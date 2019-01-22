@@ -1,7 +1,6 @@
 package ui;
 
 import fachada.Fachada;
-import mdlaf.utils.MaterialColors;
 import modelo.Cliente;
 import modelo.Pedido;
 
@@ -25,7 +24,7 @@ public class CancelarPedidoFrame extends JDialog {
         setTitle("Cancelar Pedido");
         setResizable(false);
         setLocationRelativeTo(null);
-        setBackground(MaterialColors.WHITE);
+        //setBackground(MaterialColors.WHITE);
         //setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();

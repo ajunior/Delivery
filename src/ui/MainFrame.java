@@ -1,8 +1,5 @@
 package ui;
 
-import mdlaf.*;
-import mdlaf.utils.MaterialColors;
-
 import fachada.Fachada;
 import modelo.Produto;
 import modelo.Cliente;
@@ -49,7 +46,7 @@ public class MainFrame extends JFrame {
         setMinimumSize(new Dimension(1080, 768));
         setLocationRelativeTo(null);
         setResizable(false);
-        setBackground(MaterialColors.WHITE);
+        //setBackground(MaterialColors.WHITE);
         setJMenuBar(criarMenu());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);

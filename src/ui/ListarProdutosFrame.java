@@ -4,8 +4,6 @@ import fachada.Fachada;
 import modelo.Pedido;
 import modelo.Produto;
 
-import mdlaf.utils.MaterialColors;
-
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -31,7 +29,7 @@ public class ListarProdutosFrame extends JDialog {
         setTitle("Lista de Clientes");
         setResizable(false);
         setLocationRelativeTo(null);
-        setBackground(MaterialColors.WHITE);
+        //setBackground(MaterialColors.WHITE);
         //setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();

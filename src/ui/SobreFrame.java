@@ -1,7 +1,5 @@
 package ui;
 
-import mdlaf.utils.MaterialColors;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -15,7 +13,7 @@ public class SobreFrame extends JDialog {
         setSize(400, 100);
         setResizable(false);
         setLocationRelativeTo(null);
-        setBackground(MaterialColors.WHITE);
+        //setBackground(MaterialColors.WHITE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         add(lblNomePrograma, BorderLayout.NORTH);
         add(lblCopyright, BorderLayout.SOUTH);
