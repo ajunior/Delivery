@@ -2,18 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c23c13-d978-49b0-9e4f-677a295fe171" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ui/AbrirPedidoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/AbrirPedidoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ArrecadacaoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ArrecadacaoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CadastrarClienteFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CadastrarClienteFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CadastrarProdutoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CadastrarProdutoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ListarClientesFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListarClientesFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ListarPedidosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListarPedidosFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ListarPedidosPorClienteFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListarPedidosPorClienteFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ListarProdutosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListarProdutosFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/SobreFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/SobreFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Delivery.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Delivery.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/material_ui_swing_0_9_6_jar_with_dependencies.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +258,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548180301237" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548180415831" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/POO2018-2-material/cap8-camadas/loja-fachada" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -343,16 +334,15 @@
       <workItem from="1547674402631" duration="281000" />
       <workItem from="1547675022584" duration="97000" />
       <workItem from="1547921623806" duration="65000" />
-      <workItem from="1547925112318" duration="70892000" />
+      <workItem from="1547925112318" duration="71612000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100913000" />
+    <option name="totallyTimeSpent" value="101633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
