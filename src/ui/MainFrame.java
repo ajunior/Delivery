@@ -63,6 +63,9 @@ public class MainFrame extends JFrame {
         CadastrarProdutoFrame cadastrarproduto = new CadastrarProdutoFrame();
         ListarProdutosFrame listarprodutos = new ListarProdutosFrame();
         AbrirPedidoFrame abrirpedido = new AbrirPedidoFrame();
+        ListarPedidosFrame listarpedidos = new ListarPedidosFrame();
+        ListarPedidosPorClienteFrame listarpedidosporcliente = new ListarPedidosPorClienteFrame();
+        ConsultarPedidoFrame consultarpedido = new ConsultarPedidoFrame();
 
         // MENU APLICATIVO
         JMenu menuApp = new JMenu("Aplicativo");
@@ -145,12 +148,36 @@ public class MainFrame extends JFrame {
             }
         });
 
-        JMenuItem menuPedidoListar = new JMenuItem("Listar");
+        JMenuItem menuPedidoListar = new JMenuItem("Listar Pedidos");
         menuPedido.add(menuPedidoListar);
-        JMenuItem menuPedidoListarPorCliente = new JMenuItem("Listar por cliente");
+        menuPedidoListar.setMnemonic(KeyEvent.VK_L);
+        menuPedidoListar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                listarpedidos.setVisible(true);
+            }
+        });
+
+        JMenuItem menuPedidoListarPorCliente = new JMenuItem("Listar Pedidos por cliente");
         menuPedido.add(menuPedidoListarPorCliente);
+        menuPedidoListarPorCliente.setMnemonic(KeyEvent.VK_E);
+        menuPedidoListarPorCliente.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                listarpedidosporcliente.setVisible(true);
+            }
+        });
+
         JMenuItem menuPedidoConsultar = new JMenuItem("Consultar");
         menuPedido.add(menuPedidoConsultar);
+        menuPedidoConsultar.setMnemonic(KeyEvent.VK_C);
+        menuPedidoConsultar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                consultarpedido.setVisible(true);
+            }
+        });
+
         JMenuItem menuPedidoCancelar = new JMenuItem("Cancelar");
         menuPedido.add(menuPedidoCancelar);
         JMenuItem menuPedidoFechar = new JMenuItem("Fechar");

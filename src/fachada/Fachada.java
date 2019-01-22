@@ -45,8 +45,10 @@ public class Fachada {
     //  LISTAR PEDIDOS POR CLIENTE
     // -------------------------------------
 
-    public static ArrayList<Pedido> listarPedidos(String telefone) {
+    public static ArrayList<Pedido> listarPedidos(String telefone) throws Exception {
         Cliente c = restaurante.localizarCliente(telefone);
+        if (c == null)
+            throw new Exception("Cadastrar Cliente: Cliente não cadastrado.");
 
         ArrayList<Pedido> pedidos = restaurante.getPedidos();
         ArrayList<Pedido> ped = new ArrayList<Pedido>();

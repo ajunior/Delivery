@@ -121,13 +121,15 @@ public class Teste1 {
 
 
 		System.out.println("Pedidos cadastrados de um cliente: ");
-		ArrayList<Pedido> pedidosPorCliente = Fachada.listarPedidos("98745-0643");
-
-		if (!pedidosPorCliente.isEmpty())
-			System.out.println(pedidosPorCliente);
-		else
-			System.out.println("Nao existem pedidos deste cliente.");
-		
+		try {
+			ArrayList<Pedido> pedidosPorCliente = Fachada.listarPedidos("98745-0643");
+			if (!pedidosPorCliente.isEmpty())
+				System.out.println(pedidosPorCliente);
+			else
+				System.out.println("Nao existem pedidos deste cliente.");
+		} catch (Exception e) {
+				System.out.println(e.getMessage());
+		}
 	}
 	
 	
