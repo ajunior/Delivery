@@ -57,7 +57,7 @@ public class ListarPedidosFrame extends JDialog {
             texto += "Nenhum pedido cadastrado\n";
         else
             for (Pedido p : resultado)
-                texto += p + "\n";
+                texto += p.getId() + " " + p.getData() + "produtos.\n";
 
         textAreaListaPedidos.setText(texto);
     }

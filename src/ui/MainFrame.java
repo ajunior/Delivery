@@ -151,6 +151,12 @@ public class MainFrame extends JFrame {
             }
         });
 
+        JMenuItem menuPedidoAdicionarProduto = new JMenuItem("Adcionar Produto");
+        menuPedido.add(menuPedidoAdicionarProduto);
+
+        JMenuItem menuPedidoRetirarProduto = new JMenuItem("Retirar Produto");
+        menuPedido.add(menuPedidoRetirarProduto);
+
         JMenuItem menuPedidoListar = new JMenuItem("Listar Pedidos");
         menuPedido.add(menuPedidoListar);
         menuPedidoListar.setMnemonic(KeyEvent.VK_L);
