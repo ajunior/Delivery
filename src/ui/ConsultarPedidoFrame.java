@@ -25,8 +25,7 @@ public class ConsultarPedidoFrame extends JDialog {
         setTitle("Consultar Pedido");
         setResizable(false);
         setLocationRelativeTo(null);
-        //setBackground(MaterialColors.WHITE);
-        //setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();
         contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));

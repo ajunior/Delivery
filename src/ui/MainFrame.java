@@ -15,29 +15,8 @@ public class MainFrame extends JFrame {
     public MainFrame () {
         super("Delivery");
 
-//        try {
-//            UIManager.setLookAndFeel(new MaterialLookAndFeel());
-//        } catch (UnsupportedLookAndFeelException e){
-//            e.printStackTrace();
-//        }
-//
-        try{
-            //  pre-cadastro
-            Produto p;
-            p = Fachada.cadastrarProduto("Pepsi 2L", 6.00);
-            p = Fachada.cadastrarProduto("Guaraná Antarctica 2L", 7.00);
-            p = Fachada.cadastrarProduto("Coca-Cola 2L", 8.20);
-            p = Fachada.cadastrarProduto("Coca-Cola Lata 300ml", 3.50);
-            p = Fachada.cadastrarProduto("Pizza Grande - 4 Queijos", 27.90);
-            Cliente c;
-            c = Fachada.cadastrarCliente("999440111", "Adjamilton Junior", "jr@ieee.org", "Rua Pero Vaz de Caminha 455, 13 de Maio.");
-            c = Fachada.cadastrarCliente("988756525", "Deborah Felix", "debh@gmail.com", "Av. Epitacio Pessoa 4096, Tambauzinho");
-            Fachada.abrirPedido("999440111");
-            System.out.println("pre-cadastro concluido");
-
-        } catch (Exception e){
-            System.out.println(e.getMessage());
-        }
+        // Pré-cadastro
+        preCadastro();
 
         //  Configuração da Janela principal da aplicação.
         setLayout(new FlowLayout());
@@ -46,33 +25,24 @@ public class MainFrame extends JFrame {
         setMinimumSize(new Dimension(1080, 768));
         setLocationRelativeTo(null);
         setResizable(false);
-        //setBackground(MaterialColors.WHITE);
         setJMenuBar(criarMenu());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
 
+    // -----------------------------------------------------
+    // MENU
+    // -----------------------------------------------------
+
     private JMenuBar criarMenu() {
         JMenuBar menuBar = new JMenuBar();
-        SobreFrame sobre = new SobreFrame();
-        ArrecadacaoFrame arrecadacao = new ArrecadacaoFrame();
-        CadastrarClienteFrame cadastrarcliente = new CadastrarClienteFrame();
-        ListarClientesFrame listarclientes = new ListarClientesFrame();
-        CadastrarProdutoFrame cadastrarproduto = new CadastrarProdutoFrame();
-        ListarProdutosFrame listarprodutos = new ListarProdutosFrame();
-        AbrirPedidoFrame abrirpedido = new AbrirPedidoFrame();
-        ListarPedidosFrame listarpedidos = new ListarPedidosFrame();
-        ListarPedidosPorClienteFrame listarpedidosporcliente = new ListarPedidosPorClienteFrame();
-        ConsultarPedidoFrame consultarpedido = new ConsultarPedidoFrame();
-        CancelarPedidoFrame cancelarpedido = new CancelarPedidoFrame();
-        //FecharPedidoFrame fecharpedido = new FecharPedidoFrame();
 
         // MENU APLICATIVO
         JMenu menuApp = new JMenu("Aplicativo");
-        JMenuItem menuAppConfig = new JMenuItem("Configurações");
-        menuApp.add(menuAppConfig);
 
         JMenuItem menuAppSair = new JMenuItem("Sair");
+        menuApp.add(menuAppSair);
+        menuBar.add(menuApp);
         menuAppSair.setMnemonic(KeyEvent.VK_S);
         menuAppSair.addActionListener(new ActionListener() {
             @Override
@@ -86,9 +56,6 @@ public class MainFrame extends JFrame {
                     System.exit(0);
             }
         });
-        menuApp.add(menuAppSair);
-
-        menuBar.add(menuApp);
 
         // MENU CLIENTE
         JMenu menuCliente = new JMenu("Cliente");
@@ -98,7 +65,7 @@ public class MainFrame extends JFrame {
         menuClienteCadastrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                cadastrarcliente.setVisible(true);
+                new CadastrarClienteFrame().setVisible(true);
             }
         });
 
@@ -109,7 +76,7 @@ public class MainFrame extends JFrame {
         menuClienteListar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                listarclientes.setVisible(true);
+                new ListarClientesFrame().setVisible(true);
             }
         });
 
@@ -121,7 +88,7 @@ public class MainFrame extends JFrame {
         menuProdutoCadastrar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                cadastrarproduto.setVisible(true);
+                new CadastrarProdutoFrame().setVisible(true);
             }
         });
 
@@ -132,7 +99,7 @@ public class MainFrame extends JFrame {
         menuProdutoListar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                listarprodutos.setVisible(true);
+                new ListarProdutosFrame().setVisible(true);
             }
         });
 
@@ -144,7 +111,7 @@ public class MainFrame extends JFrame {
         menuPedidoAbrir.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                abrirpedido.setVisible(true);
+                new AbrirPedidoFrame().setVisible(true);
             }
         });
 
@@ -160,7 +127,7 @@ public class MainFrame extends JFrame {
         menuPedidoListar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                listarpedidos.setVisible(true);
+                new ListarPedidosFrame().setVisible(true);
             }
         });
 
@@ -170,7 +137,7 @@ public class MainFrame extends JFrame {
         menuPedidoListarPorCliente.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                listarpedidosporcliente.setVisible(true);
+                new ListarPedidosPorClienteFrame().setVisible(true);
             }
         });
 
@@ -180,7 +147,7 @@ public class MainFrame extends JFrame {
         menuPedidoConsultar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                consultarpedido.setVisible(true);
+                new ConsultarPedidoFrame().setVisible(true);
             }
         });
 
@@ -190,7 +157,7 @@ public class MainFrame extends JFrame {
         menuPedidoCancelar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                cancelarpedido.setVisible(true);
+                new CancelarPedidoFrame().setVisible(true);
             }
         });
 
@@ -201,7 +168,7 @@ public class MainFrame extends JFrame {
         menuPedidoFechar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //fecharpedido.setVisible(true);
+                new FecharPedidoFrame().setVisible(true);
             }
         });
 
@@ -214,26 +181,48 @@ public class MainFrame extends JFrame {
         menuRelatorioArrecadacao.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                arrecadacao.setVisible(true);
+                new ArrecadacaoFrame().setVisible(true);
             }
         });
 
         // MENU AJUDA
         JMenu menuAjuda = new JMenu("Ajuda");
-        JMenuItem menuAjudaAjuda = new JMenuItem("Ajuda");
-        menuAjuda.add(menuAjudaAjuda);
 
         JMenuItem menuAjudaSobre = new JMenuItem("Sobre");
+        menuAjuda.add(menuAjudaSobre);
+        menuBar.add(menuAjuda);
         menuAjudaSobre.setMnemonic(KeyEvent.VK_S);
         menuAjudaSobre.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                sobre.setVisible(true);
+                new SobreFrame().setVisible(true);
             }
         });
-        menuAjuda.add(menuAjudaSobre);
-        menuBar.add(menuAjuda);
 
         return menuBar;
+    }
+
+    // -----------------------------------------------------
+    // PRÉ-CADASTRO
+    // -----------------------------------------------------
+
+    private static void preCadastro() {
+        try {
+
+            Produto p;
+            p = Fachada.cadastrarProduto("Pepsi 2L", 6.00);
+            p = Fachada.cadastrarProduto("Guaraná Antarctica 2L", 7.00);
+            p = Fachada.cadastrarProduto("Coca-Cola 2L", 8.20);
+            p = Fachada.cadastrarProduto("Coca-Cola Lata 300ml", 3.50);
+            p = Fachada.cadastrarProduto("Pizza Grande - 4 Queijos", 27.90);
+            Cliente c;
+            c = Fachada.cadastrarCliente("999440111", "Adjamilton Junior", "jr@ieee.org", "Rua Pero Vaz de Caminha 455, 13 de Maio.");
+            c = Fachada.cadastrarCliente("988756525", "Deborah Felix", "debh@gmail.com", "Av. Epitacio Pessoa 4096, Tambauzinho");
+            Fachada.abrirPedido("999440111");
+            System.out.println("pre-cadastro concluido");
+
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
