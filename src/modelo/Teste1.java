@@ -154,7 +154,7 @@ public class Teste1 {
 			System.out.println("3--->" + e.getMessage());
 		}
 		try {
-			Pedido p = Fachada.abrirPedido("98820-0222");    //ok
+			//Pedido p = Fachada.abrirPedido("98820-0222");    //ok
 			Fachada.adicionarProdutoPedido("98820-0222", 99);
 			System.out.println("*************FALHA4: nao pode adicionar produto inexistente");
 		} catch (Exception e) {

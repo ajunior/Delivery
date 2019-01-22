@@ -7,18 +7,16 @@ import java.awt.*;
 
 public class SobreFrame extends JDialog {
     JLabel lblNomePrograma = new JLabel("Delivery v.0.1");
-    JLabel lblCopyright = new JLabel("Copyright (C) 2019, Adjamilton Junior (jr@ieee.org)");
+    JLabel lblCopyright = new JLabel("Estudante: Adjamilton Junior (jr@ieee.org)");
 
     public SobreFrame() {
-        //super("Sobre...");
-
         setLayout(new FlowLayout());
         setModal(true);
-        setSize(400, 400);
+        setSize(400, 100);
         setResizable(false);
         setLocationRelativeTo(null);
         setBackground(MaterialColors.WHITE);
-        //setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         add(lblNomePrograma, BorderLayout.NORTH);
         add(lblCopyright, BorderLayout.SOUTH);
     }

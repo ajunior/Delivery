@@ -67,8 +67,11 @@ public class Restaurante {
     // CLIENTES
     // -------------------------------------
 
-    public void adicionar(Cliente c) {
-        this.clientes.add(c);
+    public Cliente adicionar(Cliente c) {
+        if(this.clientes.add(c))
+            return c;
+
+        return null;
     }
 
     public ArrayList<Cliente> getClientes() {

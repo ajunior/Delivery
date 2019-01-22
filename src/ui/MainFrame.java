@@ -18,12 +18,12 @@ public class MainFrame extends JFrame {
     public MainFrame () {
         super("Delivery");
 
-        try {
-            UIManager.setLookAndFeel(new MaterialLookAndFeel());
-        } catch (UnsupportedLookAndFeelException e){
-            e.printStackTrace();
-        }
-
+//        try {
+//            UIManager.setLookAndFeel(new MaterialLookAndFeel());
+//        } catch (UnsupportedLookAndFeelException e){
+//            e.printStackTrace();
+//        }
+//
         try{
             //  pre-cadastro
             Produto p;
@@ -57,6 +57,12 @@ public class MainFrame extends JFrame {
     private JMenuBar criarMenu() {
         JMenuBar menuBar = new JMenuBar();
         SobreFrame sobre = new SobreFrame();
+        ArrecadacaoFrame arrecadacao = new ArrecadacaoFrame();
+        CadastrarClienteFrame cadastrarcliente = new CadastrarClienteFrame();
+        ListarClientesFrame listarclientes = new ListarClientesFrame();
+        CadastrarProdutoFrame cadastrarproduto = new CadastrarProdutoFrame();
+        ListarProdutosFrame listarprodutos = new ListarProdutosFrame();
+        AbrirPedidoFrame abrirpedido = new AbrirPedidoFrame();
 
         // MENU APLICATIVO
         JMenu menuApp = new JMenu("Aplicativo");
@@ -85,22 +91,60 @@ public class MainFrame extends JFrame {
         JMenu menuCliente = new JMenu("Cliente");
         JMenuItem menuClienteCadastrar = new JMenuItem("Cadastrar");
         menuCliente.add(menuClienteCadastrar);
+        menuClienteCadastrar.setMnemonic(KeyEvent.VK_C);
+        menuClienteCadastrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cadastrarcliente.setVisible(true);
+            }
+        });
+
         JMenuItem menuClienteListar = new JMenuItem("Listar");
         menuCliente.add(menuClienteListar);
         menuBar.add(menuCliente);
+        menuClienteListar.setMnemonic(KeyEvent.VK_L);
+        menuClienteListar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                listarclientes.setVisible(true);
+            }
+        });
 
         // MENU PRODUTO
         JMenu menuProduto = new JMenu("Produto");
         JMenuItem menuProdutoCadastrar = new JMenuItem("Cadastrar");
         menuProduto.add(menuProdutoCadastrar);
+        menuProdutoCadastrar.setMnemonic(KeyEvent.VK_C);
+        menuProdutoCadastrar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cadastrarproduto.setVisible(true);
+            }
+        });
+
         JMenuItem menuProdutoListar = new JMenuItem("Listar");
         menuProduto.add(menuProdutoListar);
         menuBar.add(menuProduto);
+        menuProdutoListar.setMnemonic(KeyEvent.VK_L);
+        menuProdutoListar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                listarprodutos.setVisible(true);
+            }
+        });
 
         // MENU PEDIDO
         JMenu menuPedido = new JMenu("Pedido");
-        JMenuItem menuPedidoCadastrar = new JMenuItem("Cadastrar Pedido");
-        menuPedido.add(menuPedidoCadastrar);
+        JMenuItem menuPedidoAbrir = new JMenuItem("Abrir Pedido");
+        menuPedido.add(menuPedidoAbrir);
+        menuPedidoAbrir.setMnemonic(KeyEvent.VK_A);
+        menuPedidoAbrir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                abrirpedido.setVisible(true);
+            }
+        });
+
         JMenuItem menuPedidoListar = new JMenuItem("Listar");
         menuPedido.add(menuPedidoListar);
         JMenuItem menuPedidoListarPorCliente = new JMenuItem("Listar por cliente");
@@ -118,6 +162,14 @@ public class MainFrame extends JFrame {
         JMenuItem menuRelatorioArrecadacao = new JMenuItem("Arrecadação");
         menuRelatorio.add(menuRelatorioArrecadacao);
         menuBar.add(menuRelatorio);
+
+        menuRelatorioArrecadacao.setMnemonic(KeyEvent.VK_A);
+        menuRelatorioArrecadacao.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                arrecadacao.setVisible(true);
+            }
+        });
 
         // MENU AJUDA
         JMenu menuAjuda = new JMenu("Ajuda");
