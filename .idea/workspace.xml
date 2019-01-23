@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c23c13-d978-49b0-9e4f-677a295fe171" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/ui/CadastrarClienteFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CadastrarClienteFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/ListarClientesFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListarClientesFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,11 +12,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
               <caret line="95" column="43" lean-forward="true" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ui/ListarClientesFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,7 +83,6 @@
         <option value="$PROJECT_DIR$/src/ui/ArrecadacaoFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/CadastrarProdutoFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java" />
-        <option value="$PROJECT_DIR$/src/ui/ListarClientesFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/ListarPedidosPorClienteFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/ListarProdutosFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/FecharPedidoFrame.java" />
@@ -79,6 +90,7 @@
         <option value="$PROJECT_DIR$/src/ui/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/SobreFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/CadastrarClienteFrame.java" />
+        <option value="$PROJECT_DIR$/src/ui/ListarClientesFrame.java" />
       </list>
     </option>
   </component>
@@ -232,12 +244,12 @@
       <workItem from="1547921623806" duration="65000" />
       <workItem from="1547925112318" duration="71612000" />
       <workItem from="1548188522754" duration="3263000" />
-      <workItem from="1548221400243" duration="4394000" />
+      <workItem from="1548221400243" duration="8020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110528000" />
+    <option name="totallyTimeSpent" value="114154000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -451,16 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ListarClientesFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -545,6 +547,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="95" column="43" lean-forward="true" selection-start-line="95" selection-start-column="43" selection-end-line="95" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ListarClientesFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="33" column="73" selection-start-line="33" selection-start-column="73" selection-end-line="33" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
