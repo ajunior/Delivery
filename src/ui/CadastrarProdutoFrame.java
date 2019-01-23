@@ -25,7 +25,6 @@ public class CadastrarProdutoFrame extends JDialog {
         setTitle("Cadastrar Produto");
         setResizable(false);
         setLocationRelativeTo(null);
-        //setBackground(MaterialColors.WHITE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();
@@ -69,25 +68,25 @@ public class CadastrarProdutoFrame extends JDialog {
                         if (p != null)
                             JOptionPane.showConfirmDialog(null,"Produto cadastrado com sucesso.", "Confirmação", JOptionPane.DEFAULT_OPTION);
                     }
-
-                    textFieldNome.setText("");
-                    textFieldPreco.setText("");
-                    textFieldNome.requestFocus();
                 }
                 catch(Exception erro){
                     JOptionPane.showConfirmDialog(null,erro.getMessage(), "Alerta", JOptionPane.DEFAULT_OPTION);
                 }
+
+                textFieldNome.setText("");
+                textFieldPreco.setText("");
+                textFieldNome.requestFocus();
             }
         });
         btnCadastrar.setBounds(10, 100, 100, 24);
         contentPanel.add(btnCadastrar);
 
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            @Override
-            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
-                textFieldNome.setText("");
-                textFieldPreco.setText("");
-            }
-        });
+//        addWindowListener(new java.awt.event.WindowAdapter() {
+//            @Override
+//            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+//                textFieldNome.setText("");
+//                textFieldPreco.setText("");
+//            }
+//        });
     }
 }

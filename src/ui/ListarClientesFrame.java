@@ -15,7 +15,6 @@ public class ListarClientesFrame extends JDialog {
     private JTable tblListaClientes;
     private JLabel lblQtdeClientes;
     private JLabel lblQtde;
-    private JTextArea textAreaListaClientes;
 
     public ListarClientesFrame() {
         setLayout(new FlowLayout());
