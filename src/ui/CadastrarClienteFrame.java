@@ -25,11 +25,10 @@ public class CadastrarClienteFrame extends JDialog {
     public CadastrarClienteFrame() {
         setLayout(new FlowLayout());
         setModal(true);
-        setSize(420, 270);
+        setSize(420, 265);
         setTitle("Cadastrar Cliente");
         setResizable(false);
         setLocationRelativeTo(null);
-        //setBackground(MaterialColors.WHITE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();
@@ -78,7 +77,7 @@ public class CadastrarClienteFrame extends JDialog {
             public void actionPerformed(ActionEvent e) {
                 try{
                     if (textFieldTelefone.getText().isEmpty())
-                        JOptionPane.showConfirmDialog(null,"O telefone do cliente é obrigatório.", "Alerta", JOptionPane.DEFAULT_OPTION);
+                        JOptionPane.showConfirmDialog(null,"O Telefone do cliente é obrigatório.", "Alerta", JOptionPane.DEFAULT_OPTION);
 
                     else if (textFieldTelefone.getText().isEmpty())
                         JOptionPane.showConfirmDialog(null,"O Nome do cliente é obrigatório.", "Alerta", JOptionPane.DEFAULT_OPTION);
@@ -101,6 +100,11 @@ public class CadastrarClienteFrame extends JDialog {
                 catch(Exception erro){
                     JOptionPane.showConfirmDialog(null,erro.getMessage(), "Alerta", JOptionPane.DEFAULT_OPTION);
                 }
+
+                textFieldTelefone.setText("");
+                textFieldNome.setText("");
+                textFieldEmail.setText("");
+                textFieldEndereco.setText("");
             }
         });
         btnCadastrar.setBounds(10, 185, 100, 24);
