@@ -35,7 +35,7 @@ public class ListarProdutosFrame extends JDialog {
         setContentPane(contentPanel);
         contentPanel.setLayout(null);
 
-        lblProduto = new JLabel("Telefone:");
+        lblProduto = new JLabel("Produto:");
         lblProduto.setBounds(10, 20, 80, 20);
         contentPanel.add(lblProduto);
 
