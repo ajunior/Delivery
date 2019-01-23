@@ -128,13 +128,13 @@ public class Restaurante {
     }
 
     public Pedido fecharPedido(int id, String entregador, double txEntrega) {
-        double valor = 0.0;
+        double valor = txEntrega;
 
         for (Pedido p: pedidos)
             if (p.getId() == id) {
                 p.setFechado();
                 p.setEntregador(entregador);
-                p.setTotal(valor + txEntrega);
+                p.setTotal(valor);
                 return p;
             }
         return null;

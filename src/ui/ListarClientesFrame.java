@@ -34,9 +34,8 @@ public class ListarClientesFrame extends JDialog {
 
         ArrayList<Cliente> resultado = Fachada.listarClientes();
 
-        DefaultTableModel model = new DefaultTableModel(tblHeader,resultado.size());
+        DefaultTableModel model = new DefaultTableModel(tblHeader, resultado.size());
         tblListaClientes = new JTable(model);
-        tblListaClientes.setBounds(10, 10, 150, 150);
         contentPanel.add(tblListaClientes);
 
         int linha = 0;
