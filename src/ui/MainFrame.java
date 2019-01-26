@@ -28,6 +28,22 @@ public class MainFrame extends JFrame {
         setJMenuBar(criarMenu());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
+
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            @Override
+            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
+                int action = JOptionPane.showConfirmDialog(MainFrame.this,
+                        "Tem certeza que deseja sair da aplicação?",
+                        "Confirmação",
+                        JOptionPane.OK_CANCEL_OPTION);
+
+                if (action == JOptionPane.OK_OPTION)
+                    //System.exit(0);
+                    setDefaultCloseOperation(EXIT_ON_CLOSE);
+                else
+                    setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
+            }
+        });
     }
 
     // -----------------------------------------------------

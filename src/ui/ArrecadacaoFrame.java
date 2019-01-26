@@ -24,7 +24,6 @@ public class ArrecadacaoFrame extends JDialog {
         setTitle("Arrecadação");
         setResizable(false);
         setLocationRelativeTo(null);
-        //setBackground(MaterialColors.WHITE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();

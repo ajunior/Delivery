@@ -85,6 +85,5 @@ public class Pedido {
     @Override
     public String toString () {
         return "" + this.id + ' ' + this.data.format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")) + ' ' + this.total + ' ' + this.entregador + ' ' + this.fechado;
-        //return "teste";
     }
 }

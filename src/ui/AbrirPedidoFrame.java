@@ -24,7 +24,6 @@ public class AbrirPedidoFrame extends JDialog {
         setTitle("Abrir Pedido");
         setResizable(false);
         setLocationRelativeTo(null);
-        //setBackground(MaterialColors.WHITE);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();
