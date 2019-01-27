@@ -80,13 +80,5 @@ public class CadastrarProdutoFrame extends JDialog {
         });
         btnCadastrar.setBounds(10, 100, 100, 24);
         contentPanel.add(btnCadastrar);
-
-//        addWindowListener(new java.awt.event.WindowAdapter() {
-//            @Override
-//            public void windowClosing(java.awt.event.WindowEvent windowEvent) {
-//                textFieldNome.setText("");
-//                textFieldPreco.setText("");
-//            }
-//        });
     }
 }

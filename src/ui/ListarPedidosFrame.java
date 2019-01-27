@@ -59,9 +59,6 @@ public class ListarPedidosFrame extends JDialog {
         tblListaPedidos = new JTable(model);
         tblListaPedidos.setBounds(10, 30, 565, 390);
         contentPanel.add(tblListaPedidos);
-        JScrollPane scrollPane = new JScrollPane(tblListaPedidos);
-        contentPanel.add(scrollPane);
-        tblListaPedidos.setFillsViewportHeight(true);
 
         lblQtdePedidos = new JLabel("Quantidade de Pedidos:");
         lblQtdePedidos.setBounds(10, 430, 150, 20);
