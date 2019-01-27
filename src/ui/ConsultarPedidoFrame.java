@@ -1,7 +1,6 @@
 package ui;
 
 import fachada.Fachada;
-import modelo.Cliente;
 import modelo.Pedido;
 
 import javax.swing.*;
@@ -9,19 +8,17 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class ConsultarPedidoFrame extends JDialog {
     private JPanel contentPanel;
     private JLabel lblTelefone;
     private JTextField textFieldTelefone;
-    private JLabel lblPedidoAberto;
     private JButton btnConsultar;
 
     public ConsultarPedidoFrame () {
         setLayout(new FlowLayout());
         setModal(true);
-        setSize(550, 160);
+        setSize(600, 100);
         setTitle("Consultar Pedido");
         setResizable(false);
         setLocationRelativeTo(null);
@@ -53,9 +50,15 @@ public class ConsultarPedidoFrame extends JDialog {
 
                         Pedido p = Fachada.consultarPedido(telefone);
                         if (p != null)
-                            lblPedidoAberto.setText("Há pedido aberto para o cliente: " + telefone + ". ID do pedido: " +  p.getId() + ".");
+                        JOptionPane.showConfirmDialog(null,
+                                "Há pedido aberto para o cliente: " + telefone + ".\nID do pedido: " +  p.getId() + ".",
+                                "Alerta",
+                                JOptionPane.DEFAULT_OPTION);
                         else
-                            lblPedidoAberto.setText("Não há pedido aberto para o cliente: " + telefone + ".");
+                            JOptionPane.showConfirmDialog(null,
+                                    "Não há pedido aberto para o cliente: \" + telefone + \".\"" +  p.getId() + ".",
+                                    "Alerta",
+                                    JOptionPane.DEFAULT_OPTION);
 
                         textFieldTelefone.setText("");
                         textFieldTelefone.requestFocus();
@@ -68,9 +71,5 @@ public class ConsultarPedidoFrame extends JDialog {
         });
         btnConsultar.setBounds(400, 20, 120, 24);
         contentPanel.add(btnConsultar);
-
-        lblPedidoAberto = new JLabel("");
-        lblPedidoAberto.setBounds(10, 80, 400, 20);
-        contentPanel.add(lblPedidoAberto);
     }
 }

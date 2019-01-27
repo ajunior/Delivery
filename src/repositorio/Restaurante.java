@@ -42,10 +42,8 @@ public class Restaurante {
 
     public Produto localizarProduto(int id){
         for(Produto p : produtos) {
-            if (p.getId() == id) {
-                System.out.println("---" + p);
+            if (p.getId() == id)
                 return p;
-            }
         }
         return null;
     }

@@ -133,9 +133,23 @@ public class MainFrame extends JFrame {
 
         JMenuItem menuPedidoAdicionarProduto = new JMenuItem("Adcionar Produto");
         menuPedido.add(menuPedidoAdicionarProduto);
+        menuPedidoAdicionarProduto.setMnemonic(KeyEvent.VK_D);
+        menuPedidoAdicionarProduto.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new AdicionarProdutoFrame().setVisible(true);
+            }
+        });
 
         JMenuItem menuPedidoRetirarProduto = new JMenuItem("Retirar Produto");
         menuPedido.add(menuPedidoRetirarProduto);
+        menuPedidoRetirarProduto.setMnemonic(KeyEvent.VK_R);
+        menuPedidoRetirarProduto.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new RetirarProdutoFrame().setVisible(true);
+            }
+        });
 
         JMenuItem menuPedidoListar = new JMenuItem("Listar Pedidos");
         menuPedido.add(menuPedidoListar);

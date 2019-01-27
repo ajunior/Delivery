@@ -9,6 +9,7 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import java.awt.*;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 
 public class ListarPedidosFrame extends JDialog {
@@ -42,7 +43,8 @@ public class ListarPedidosFrame extends JDialog {
         int linha = 0;
         for (Pedido p : resultado) {
             tblListaPedidos.setValueAt(p.getId(), linha, 0);
-            tblListaPedidos.setValueAt(p.getData(), linha, 1);
+            tblListaPedidos.setValueAt(p.getData().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")), linha, 1);
+
             tblListaPedidos.setValueAt(p.getCliente(), linha, 2);
             ArrayList<Produto> pd = p.getProdutos();
             //tblListaPedidos.setValueAt(pd.size(), linha, 3);

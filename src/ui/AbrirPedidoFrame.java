@@ -20,7 +20,7 @@ public class AbrirPedidoFrame extends JDialog {
     public AbrirPedidoFrame () {
         setLayout(new FlowLayout());
         setModal(true);
-        setSize(420, 140);
+        setSize(600, 100);
         setTitle("Abrir Pedido");
         setResizable(false);
         setLocationRelativeTo(null);
@@ -66,7 +66,7 @@ public class AbrirPedidoFrame extends JDialog {
                 }
             }
         });
-        btnAbrirPedido.setBounds(10, 60, 120, 24);
+        btnAbrirPedido.setBounds(400, 20, 120, 24);
         contentPanel.add(btnAbrirPedido);
     }
 }

@@ -9,7 +9,6 @@ import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
 
 public class CancelarPedidoFrame extends JDialog {
     private JPanel contentPanel;
@@ -20,12 +19,11 @@ public class CancelarPedidoFrame extends JDialog {
     public CancelarPedidoFrame () {
         setLayout(new FlowLayout());
         setModal(true);
-        setSize(550, 120);
+        setSize(550, 100);
         setTitle("Cancelar Pedido");
         setResizable(false);
         setLocationRelativeTo(null);
-        //setBackground(MaterialColors.WHITE);
-        //setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPanel = new JPanel();
         contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));

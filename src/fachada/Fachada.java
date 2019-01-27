@@ -118,7 +118,7 @@ public class Fachada {
     //  ADICIONAR PRODUTO AO PEDIDO
     // -------------------------------------
 
-    public static void adicionarProdutoPedido(String telefone, int id_produto) throws Exception {
+    public static Produto adicionarProdutoPedido(String telefone, int id_produto) throws Exception {
         Cliente c = restaurante.localizarCliente(telefone);
         if (c == null)
             throw new Exception("Adicionar Produto Pedido: Cliente não cadastrado.");
@@ -131,7 +131,11 @@ public class Fachada {
         if (prod == null)
             throw new Exception("Adicionar Produto Pedido: Produto não cadastrado.");
 
-        restaurante.adicionarProduto(p.getId(), prod);
+        prod = restaurante.adicionarProduto(p.getId(), prod);
+        if (prod != null)
+            return prod;
+
+        return null;
     }
 
     public static void removerProdutoPedido(String telefone, int id) {
