@@ -68,6 +68,7 @@ public class AdicionarProdutoFrame extends JDialog {
                                     JOptionPane.DEFAULT_OPTION);
 
                         textFieldTelefone.setText("");
+                        textFieldProduto.setText("");
                         textFieldTelefone.requestFocus();
                     }
                 } catch (Exception erro) {
