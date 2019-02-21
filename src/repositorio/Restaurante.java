@@ -12,8 +12,9 @@ import java.util.TreeMap;
 public class Restaurante {
     private ArrayList<Produto> produtos = new ArrayList<Produto>();
     private ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
-    //private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
     private TreeMap<String, Cliente> clientes = new TreeMap<String, Cliente>();
+
+    //private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
 
     public Restaurante() {
         // Empty
@@ -107,8 +108,7 @@ public class Restaurante {
 
     public Pedido localizarPedido(int id) {
         for (Pedido p : pedidos) {
-            if (p.getId() == id)
-                pedidos.remove(p);
+            if(p.getId() == id && p.getFechado())
                 return p;
         }
         return null;

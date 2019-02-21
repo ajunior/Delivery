@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c23c13-d978-49b0-9e4f-677a295fe171" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/fachada/Fachada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fachada/Fachada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/repositorio/Restaurante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repositorio/Restaurante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ArrecadacaoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ArrecadacaoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ExcluirPedidoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ExcluirPedidoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/FecharPedidoFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/FecharPedidoFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ui/ListarPedidosFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/ListarPedidosFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fachada/Fachada.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1312">
-              <caret line="250" column="55" lean-forward="true" selection-start-line="250" selection-start-column="55" selection-end-line="250" selection-end-column="55" />
+            <state relative-caret-position="1241">
+              <caret line="255" column="38" selection-start-line="255" selection-start-column="38" selection-end-line="255" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#996#1005#0" expanded="true" />
@@ -32,7 +27,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="990">
@@ -126,16 +121,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/repositorio/Restaurante.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+            <state relative-caret-position="832">
+              <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#282#291#0" expanded="true" />
                 <element signature="e#350#358#0" expanded="true" />
-                <element signature="e#489#506#0" expanded="true" />
+                <element signature="e#424#441#0" expanded="true" />
                 <element signature="e#571#572#0" expanded="true" />
                 <element signature="e#614#615#0" expanded="true" />
                 <element signature="e#652#653#0" expanded="true" />
@@ -144,9 +139,9 @@
                 <element signature="e#1868#1869#0" expanded="true" />
                 <element signature="e#1921#1922#0" expanded="true" />
                 <element signature="e#1952#1953#0" expanded="true" />
-                <element signature="e#2303#2304#0" expanded="true" />
-                <element signature="e#4152#4153#0" expanded="true" />
-                <element signature="e#4226#4227#0" expanded="true" />
+                <element signature="e#2304#2305#0" expanded="true" />
+                <element signature="e#4143#4144#0" expanded="true" />
+                <element signature="e#4217#4218#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,9 +205,9 @@
         <option value="$PROJECT_DIR$/src/ui/FecharPedidoFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/ArrecadacaoFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/ExcluirPedidoFrame.java" />
-        <option value="$PROJECT_DIR$/src/repositorio/Restaurante.java" />
         <option value="$PROJECT_DIR$/src/fachada/Fachada.java" />
         <option value="$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java" />
+        <option value="$PROJECT_DIR$/src/repositorio/Restaurante.java" />
       </list>
     </option>
   </component>
@@ -274,7 +269,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550783931298" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550785154926" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -326,18 +321,18 @@
       <workItem from="1548188522754" duration="3263000" />
       <workItem from="1548221400243" duration="20241000" />
       <workItem from="1548543610708" duration="10830000" />
-      <workItem from="1550689920472" duration="26718000" />
+      <workItem from="1550689920472" duration="27943000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163923000" />
+    <option name="totallyTimeSpent" value="165148000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="3773" height="2133" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17601287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17601287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -346,7 +341,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21031547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21031547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,34 +687,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/repositorio/Restaurante.java">
+    <entry file="file://$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="122" column="5" lean-forward="true" selection-start-line="122" selection-start-column="5" selection-end-line="122" selection-end-column="5" />
+        <state relative-caret-position="990">
+          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#282#291#0" expanded="true" />
-            <element signature="e#350#358#0" expanded="true" />
-            <element signature="e#489#506#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#652#653#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#1813#1814#0" expanded="true" />
-            <element signature="e#1868#1869#0" expanded="true" />
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#1952#1953#0" expanded="true" />
-            <element signature="e#2303#2304#0" expanded="true" />
-            <element signature="e#4152#4153#0" expanded="true" />
-            <element signature="e#4226#4227#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fachada/Fachada.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1312">
-          <caret line="250" column="55" lean-forward="true" selection-start-line="250" selection-start-column="55" selection-end-line="250" selection-end-column="55" />
+        <state relative-caret-position="1241">
+          <caret line="255" column="38" selection-start-line="255" selection-start-column="38" selection-end-line="255" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#996#1005#0" expanded="true" />
@@ -728,12 +709,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/repositorio/Restaurante.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="66" column="29" selection-start-line="66" selection-start-column="29" selection-end-line="66" selection-end-column="29" />
+        <state relative-caret-position="832">
+          <caret line="105" column="8" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#282#291#0" expanded="true" />
+            <element signature="e#350#358#0" expanded="true" />
+            <element signature="e#424#441#0" expanded="true" />
+            <element signature="e#571#572#0" expanded="true" />
+            <element signature="e#614#615#0" expanded="true" />
+            <element signature="e#652#653#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+            <element signature="e#1813#1814#0" expanded="true" />
+            <element signature="e#1868#1869#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
+            <element signature="e#1952#1953#0" expanded="true" />
+            <element signature="e#2304#2305#0" expanded="true" />
+            <element signature="e#4143#4144#0" expanded="true" />
+            <element signature="e#4217#4218#0" expanded="true" />
           </folding>
         </state>
       </provider>
