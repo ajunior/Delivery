@@ -18,7 +18,7 @@ public class ConsultarPedidoFrame extends JDialog {
     public ConsultarPedidoFrame () {
         setLayout(new FlowLayout());
         setModal(true);
-        setSize(600, 100);
+        setSize(600, 600);
         setTitle("Consultar Pedido");
         setResizable(false);
         setLocationRelativeTo(null);

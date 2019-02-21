@@ -100,7 +100,7 @@ public class Restaurante {
 
     public Pedido remover(Pedido p) {
         if (!p.getFechado()) {
-            this.produtos.remove(p);
+            this.pedidos.remove(p);
             return p;
         }
 
