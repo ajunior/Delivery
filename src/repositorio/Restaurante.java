@@ -98,18 +98,17 @@ public class Restaurante {
         return p;
     }
 
-    public Pedido remover(Pedido p) {
-        if (!p.getFechado()) {
-            this.pedidos.remove(p);
+    public Pedido removerPedido(Pedido p) {
+        if (pedidos.remove(p))
             return p;
-        }
 
         return null;
     }
 
     public Pedido localizarPedido(int id) {
         for (Pedido p : pedidos) {
-            if(p.getId() == id && p.getFechado())
+            if (p.getId() == id)
+                pedidos.remove(p);
                 return p;
         }
         return null;
@@ -152,6 +151,10 @@ public class Restaurante {
             if (p.getId() == id) {
                 p.setFechado();
                 p.setEntregador(entregador);
+
+                for (Produto prod: p.getProdutos())
+                    valor += prod.getPreco();
+
                 p.setTotal(valor);
                 return p;
             }

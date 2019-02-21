@@ -199,23 +199,23 @@ public class Fachada {
         if (p == null)
             throw new Exception("Cancelar Pedido: Não há pedido aberto para este cliente.");
 
-        return restaurante.remover(p);
+        return restaurante.removerPedido(p);
     }
 
     // -------------------------------------
     //  FECHAR PEDIDO
     // -------------------------------------
 
-    public static void fecharPedido(String telefone, String entregador) throws Exception {
+    public static Pedido fecharPedido(String telefone, String entregador) throws Exception {
         Cliente c = restaurante.localizarCliente(telefone);
         if (c == null)
             throw new Exception("Fechar Pedido: Cliente não cadastrado.");
 
         Pedido p = restaurante.localizarPedidoAberto(telefone);
-        if (p != null)
-            restaurante.fecharPedido(p.getId(), entregador, txEntrega);
-        else
-            System.out.println("Fechar Pedido: Não há pedido aberto para o cliente " + telefone);
+        if (p == null)
+            throw new Exception("Fechar Pedido: Não há pedido aberto para o cliente \" + telefone");
+
+        return restaurante.fecharPedido(p.getId(), entregador, txEntrega);
     }
 
     // -------------------------------------
@@ -247,15 +247,12 @@ public class Fachada {
     // -------------------------------------
     //  EXCLUIR PEDIDO
     // -------------------------------------
-    public static Pedido excluirPedido(int pedido) {
+    public static Pedido excluirPedido(int pedido) throws Exception {
         Pedido p = restaurante.localizarPedido(pedido);
-        if (p != null) {
-            if (restaurante.remover(p) != null)
-                return p;
-        }
+        if (p == null)
+            throw new Exception("Excluir Pedido: Pedido não encontrado.");
 
-        return null;
+
+        return restaurante.removerPedido(p);
     }
-
-
 }

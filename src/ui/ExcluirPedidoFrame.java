@@ -51,7 +51,7 @@ public class ExcluirPedidoFrame extends JDialog {
                         Pedido p = Fachada.excluirPedido(Integer.parseInt(pedido));
                         if (p != null)
                             JOptionPane.showConfirmDialog(null,
-                                    "O Pedido " + pedido + "não existe.",
+                                    "O Pedido " + p.getId() + " foi excluído com sucesso.",
                                     "Alerta",
                                     JOptionPane.DEFAULT_OPTION);
                         else

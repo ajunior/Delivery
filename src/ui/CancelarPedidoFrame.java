@@ -51,7 +51,7 @@ public class CancelarPedidoFrame extends JDialog {
                         String telefone = textFieldTelefone.getText();
 
                         Pedido p = Fachada.consultarPedido(telefone);
-                        if (p != null)
+                        if (p != null) {
                             if (JOptionPane.showConfirmDialog(null,
                                     "Pedido encontrado.\nTem certeza que deseja cancelar este pedido?", "Close Window?",
                                     JOptionPane.YES_NO_OPTION,
@@ -65,6 +65,10 @@ public class CancelarPedidoFrame extends JDialog {
                                     JOptionPane.showConfirmDialog(null, "Não há pedido aberto para o cliente.",
                                             "Alerta", JOptionPane.DEFAULT_OPTION);
                             }
+                        } else {
+                            JOptionPane.showConfirmDialog(null, "Não há pedido aberto para o cliente.",
+                                    "Alerta", JOptionPane.DEFAULT_OPTION);
+                        }
                         textFieldTelefone.setText("");
                         textFieldTelefone.requestFocus();
                     }

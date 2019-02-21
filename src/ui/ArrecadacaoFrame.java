@@ -65,7 +65,7 @@ public class ArrecadacaoFrame extends JDialog {
         contentPanel.add(lblResultado);
 
         lblValorArrecadado = new JLabel("...");
-        lblValorArrecadado.setBounds(lblResultado.getX() + lblResultado.getWidth() + 2, lblResultado.getY(), 30, 20);
+        lblValorArrecadado.setBounds(150 , 60, 50, 20);
         contentPanel.add(lblValorArrecadado);
     }
 }

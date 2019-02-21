@@ -32,7 +32,7 @@ public class ListarPedidosFrame extends JDialog {
         setContentPane(contentPanel);
         contentPanel.setLayout(null);
 
-        String[] tblHeader = {"Nr", "Data", "Cliente", "Qtde. Produtos", "Status", "Entregador"};
+        String[] tblHeader = {"Nr", "Data", "Cliente", "Qtde. Produtos", "Status", "Entregador", "Valor (R$)"};
 
         ArrayList<Pedido> resultado = Fachada.listarPedidos();
 
@@ -48,6 +48,7 @@ public class ListarPedidosFrame extends JDialog {
             tblListaPedidos.setValueAt(p.getQtdeProdutos(), linha, 3);
             tblListaPedidos.setValueAt(p.getFechado() ? "Fechado" : "Aberto", linha, 4);
             tblListaPedidos.setValueAt(p.getEntregador(), linha, 5);
+            tblListaPedidos.setValueAt(p.getFechado() ? p.getTotal() : "---", linha, 6);
             linha++;
         }
 
