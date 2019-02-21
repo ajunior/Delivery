@@ -7,12 +7,14 @@ import repositorio.Restaurante;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.TreeMap;
 
 public class Fachada {
     private static Restaurante restaurante = new Restaurante();
     private static int nrPedido = 1;
     private static int nrProduto = 1;
     private static Double txEntrega = 10.00;
+    private static Double descontoCombo = 0.10; // percentual
 
     // -------------------------------------
     //  LISTAR TODOS OS PRODUTOS OU PRODUTO ESPECIFICO POR NOME
@@ -30,7 +32,13 @@ public class Fachada {
     // -------------------------------------
 
     public static ArrayList<Cliente> listarClientes() {
-        return restaurante.getClientes();
+        ArrayList<Cliente> cli = new ArrayList<Cliente>();
+        TreeMap<String, Cliente> clientes = restaurante.getClientes();
+
+        for (Cliente c : clientes.values())
+            cli.add(c);
+
+        return cli;
     }
 
     // -------------------------------------

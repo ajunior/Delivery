@@ -3,14 +3,17 @@ package repositorio;
 import modelo.Cliente;
 import modelo.Pedido;
 import modelo.Produto;
-import fachada.Fachada;
+import modelo.SortByProduct;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.TreeMap;
 
 public class Restaurante {
     private ArrayList<Produto> produtos = new ArrayList<Produto>();
     private ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
-    private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+    //private ArrayList<Cliente> clientes = new ArrayList<Cliente>();
+    private TreeMap<String, Cliente> clientes = new TreeMap<String, Cliente>();
 
     public Restaurante() {
         // Empty
@@ -29,6 +32,7 @@ public class Restaurante {
     }
 
     public ArrayList<Produto> getProdutos() {
+        Collections.sort(produtos, new SortByProduct());
         return produtos;
     }
 
@@ -66,18 +70,15 @@ public class Restaurante {
     // -------------------------------------
 
     public Cliente adicionar(Cliente c) {
-        if(this.clientes.add(c))
-            return c;
-
-        return null;
+        return clientes.put(c.getTelefone(), c);
     }
 
-    public ArrayList<Cliente> getClientes() {
+    public TreeMap<String, Cliente> getClientes() {
         return clientes;
     }
 
     public Cliente localizarCliente(String telefone){
-        for (Cliente c : clientes) {
+        for (Cliente c : clientes.values()) {
             if(c.getTelefone().equals(telefone))
                 return c;
         }

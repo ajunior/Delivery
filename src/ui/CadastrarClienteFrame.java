@@ -89,8 +89,8 @@ public class CadastrarClienteFrame extends JDialog {
                         JOptionPane.showConfirmDialog(null,"O Endereço do cliente é obrigatório.", "Alerta", JOptionPane.DEFAULT_OPTION);
                     else {
                         String telefone = textFieldTelefone.getText();
-                        String nome = textFieldEndereco.getText();
-                        String email = textFieldEndereco.getText();
+                        String nome = textFieldNome.getText();
+                        String email = textFieldEmail.getText();
                         String endereco = textFieldEndereco.getText();
                         Cliente c = Fachada.cadastrarCliente(telefone, nome, email, endereco);
                         if (c != null)
