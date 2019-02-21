@@ -30,7 +30,7 @@ public class ListarClientesFrame extends JDialog {
         setContentPane(contentPanel);
         contentPanel.setLayout(null);
 
-        String[] tblHeader = { "Telefone", "Nome", "Email", "Endereço" };
+        String[] tblHeader = { "Telefone", "Nome", "Email", "Endereço", "Qtde Pedidos" };
 
         ArrayList<Cliente> resultado = Fachada.listarClientes();
 
@@ -44,6 +44,11 @@ public class ListarClientesFrame extends JDialog {
             tblListaClientes.setValueAt(c.getNome(), linha, 1);
             tblListaClientes.setValueAt(c.getEmail(), linha, 2);
             tblListaClientes.setValueAt(c.getEndereco(), linha, 3);
+
+            int qtdePedidos = c.getQtdePedidos();
+            System.out.println(qtdePedidos);
+
+            tblListaClientes.setValueAt(qtdePedidos, linha, 4);
             linha++;
         }
 

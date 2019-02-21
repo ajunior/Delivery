@@ -52,6 +52,14 @@ public class Cliente {
         return this.endereco;
     }
 
+    public void addPedido (Pedido p) {
+        pedidos.add(p);
+    }
+
+    public int getQtdePedidos() {
+        return pedidos.size();
+    }
+
     @Override
     public String toString () {
         return this.nome + ' ' + this.telefone + ' ' + this.email + ' ' + this.endereco;
