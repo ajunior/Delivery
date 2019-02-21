@@ -194,11 +194,22 @@ public class MainFrame extends JFrame {
         JMenuItem menuPedidoFechar = new JMenuItem("Fechar");
         menuPedido.add(menuPedidoFechar);
         menuBar.add(menuPedido);
-        menuPedidoFechar.setMnemonic(KeyEvent.VK_F);
+        menuPedidoFechar.setMnemonic(KeyEvent.VK_X);
         menuPedidoFechar.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new FecharPedidoFrame().setVisible(true);
+            }
+        });
+
+        JMenuItem menuPedidoExcluir = new JMenuItem("Excluir");
+        menuPedido.add(menuPedidoExcluir);
+        menuBar.add(menuPedido);
+        menuPedidoExcluir.setMnemonic(KeyEvent.VK_F);
+        menuPedidoExcluir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new ExcluirPedidoFrame().setVisible(true);
             }
         });
 

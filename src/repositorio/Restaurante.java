@@ -107,6 +107,14 @@ public class Restaurante {
         return null;
     }
 
+    public Pedido localizarPedido(int id) {
+        for (Pedido p : pedidos) {
+            if(p.getId() == id && p.getFechado())
+                return p;
+        }
+        return null;
+    }
+
     public Pedido localizarPedidoAberto(String telefone) {
         for (Pedido p : pedidos) {
             if(p.getCliente().getTelefone().equals(telefone) && !p.getFechado())

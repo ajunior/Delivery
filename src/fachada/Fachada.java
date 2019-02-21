@@ -146,6 +146,10 @@ public class Fachada {
         return null;
     }
 
+    // -------------------------------------
+    //  REMOVER PRODUTO DO PEDIDO
+    // -------------------------------------
+
     public static void removerProdutoPedido(String telefone, int id) {
         //
     }
@@ -195,6 +199,9 @@ public class Fachada {
             System.out.println("Fechar Pedido: Não há pedido aberto para o cliente " + telefone);
     }
 
+    // -------------------------------------
+    //  ENVIAR PEDIDO
+    // -------------------------------------
     public static void enviarPedido(String telefone, String email) {
         //
     }
@@ -213,4 +220,23 @@ public class Fachada {
 
         return arrecadacao;
     }
+
+    // -------------------------------------
+    //  CRIAR COMBO
+    // -------------------------------------
+
+    // -------------------------------------
+    //  EXCLUIR PEDIDO
+    // -------------------------------------
+    public static Pedido excluirPedido(int pedido) {
+        Pedido p = restaurante.localizarPedido(pedido);
+        if (p != null) {
+            if (restaurante.remover(p) != null)
+                return p;
+        }
+
+        return null;
+    }
+
+
 }
