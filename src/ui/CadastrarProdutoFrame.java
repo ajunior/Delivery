@@ -66,7 +66,7 @@ public class CadastrarProdutoFrame extends JDialog {
 
                         Produto p = Fachada.cadastrarProduto(nome, Double.parseDouble(preco));
                         if (p != null)
-                            JOptionPane.showConfirmDialog(null,"Produto cadastrado com sucesso.", "Confirmação", JOptionPane.DEFAULT_OPTION);
+                            JOptionPane.showConfirmDialog(null,"Produto cadastrado com sucesso.\nID do Produto: " + p.getId(), "Confirmação", JOptionPane.DEFAULT_OPTION);
                     }
                 }
                 catch(Exception erro){

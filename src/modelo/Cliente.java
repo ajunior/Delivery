@@ -7,7 +7,7 @@ public class Cliente {
     private String nome;
     private String email;
     private String endereco;
-    private ArrayList<Pedido> pedidos;
+    private ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
 
     public Cliente () {
         // Empty
@@ -56,12 +56,16 @@ public class Cliente {
         pedidos.add(p);
     }
 
+    public void delPedido (Pedido p) {
+        pedidos.remove(p);
+    }
+
     public int getQtdePedidos() {
         return pedidos.size();
     }
 
     @Override
     public String toString () {
-        return this.nome + ' ' + this.telefone + ' ' + this.email + ' ' + this.endereco;
+        return this.nome + ' ' + this.telefone + ' ' + this.email + ' ' + this.endereco + ' ' + this.pedidos.size();
     }
 }

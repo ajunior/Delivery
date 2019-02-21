@@ -24,7 +24,10 @@ public class Fachada {
         if (nome.isEmpty())
             return restaurante.getProdutos();
 
-        return restaurante.localizarProdutos(nome);
+        if (restaurante.localizarProdutos(nome).size() != 0)
+            return restaurante.localizarProdutos(nome);
+        else
+            return restaurante.getProdutos();
     }
 
     // -------------------------------------

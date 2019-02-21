@@ -1,9 +1,12 @@
 package modelo;
 
+import java.util.ArrayList;
+
 public class Produto {
     private int id;
     private String nome;
     private Double preco;
+    private ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
 
     public Produto () {
         // Empty
@@ -37,6 +40,18 @@ public class Produto {
 
     public Double getPreco () {
         return this.preco;
+    }
+
+    public void addPedido (Pedido p) {
+        pedidos.add(p);
+    }
+
+    public void delPedido (Pedido p) {
+        pedidos.remove(p);
+    }
+
+    public int getQtdePedidos() {
+        return pedidos.size();
     }
 
     @Override
