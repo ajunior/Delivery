@@ -153,8 +153,24 @@ public class Fachada {
     //  REMOVER PRODUTO DO PEDIDO
     // -------------------------------------
 
-    public static void removerProdutoPedido(String telefone, int id) {
-        //
+    public static Produto removerProdutoPedido(String telefone, int id_produto) throws Exception {
+        Cliente c = restaurante.localizarCliente(telefone);
+        if (c == null)
+            throw new Exception("Remover Produto Pedido: Cliente não cadastrado.");
+
+        Pedido p = restaurante.localizarPedidoAberto(telefone);
+        if (p == null)
+            throw new Exception("Remover Produto Pedido: Nenhum pedido aberto para este cliente.");
+
+        Produto prod = restaurante.localizarProduto(id_produto);
+//        if (prod == null)
+//            throw new Exception("Remover Produto Pedido: Produto não cadastrado ou não especificado corretamente.");
+
+        prod = restaurante.retirarProduto(p.getId(), prod);
+        if (prod != null)
+            return prod;
+
+        return null;
     }
 
     // -------------------------------------

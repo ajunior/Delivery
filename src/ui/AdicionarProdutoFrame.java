@@ -40,7 +40,7 @@ public class AdicionarProdutoFrame extends JDialog {
         contentPanel.add(textFieldTelefone);
         textFieldTelefone.setColumns(10);
 
-        lblProduto = new JLabel("Produto:");
+        lblProduto = new JLabel("Cód. Produto:");
         lblProduto.setBounds(10, 60, 80, 20);
         contentPanel.add(lblProduto);
 
@@ -55,6 +55,9 @@ public class AdicionarProdutoFrame extends JDialog {
                 try {
                     if (textFieldTelefone.getText().isEmpty())
                         JOptionPane.showConfirmDialog(null, "O Telefone do cliente é obrigatório.", "Alerta", JOptionPane.DEFAULT_OPTION);
+
+                    if (textFieldProduto.getText().isEmpty())
+                        JOptionPane.showConfirmDialog(null, "O Código (ID) do produto é obrigatório.", "Alerta", JOptionPane.DEFAULT_OPTION);
 
                     else {
                         String telefone = textFieldTelefone.getText();

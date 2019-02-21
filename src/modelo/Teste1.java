@@ -53,7 +53,7 @@ public class Teste1 {
 			Fachada.adicionarProdutoPedido("98745-0643", 3);			
 			Fachada.adicionarProdutoPedido("98820-0222", 2);	
 			Fachada.adicionarProdutoPedido("98820-0222", 4);	
-			Fachada.removerProdutoPedido("98820-0222", 4);	
+			//Fachada.removerProdutoPedido("98820-0222", 4);
 
 			System.out.println("consultar pedido ="+ Fachada.consultarPedido("98745-0643"));
 			System.out.println("consultar pedido ="+ Fachada.consultarPedido("98820-0222"));

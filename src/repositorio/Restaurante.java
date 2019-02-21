@@ -134,6 +134,17 @@ public class Restaurante {
         return null;
     }
 
+    public Produto retirarProduto(int id_pedido, Produto produto) {
+        for (Pedido p: pedidos) {
+            if (p.getId() == id_pedido) {
+                p.delProduto(produto);
+                return produto;
+            }
+        }
+
+        return null;
+    }
+
     public Pedido fecharPedido(int id, String entregador, double txEntrega) {
         double valor = txEntrega;
 

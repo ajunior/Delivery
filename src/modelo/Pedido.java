@@ -70,6 +70,10 @@ public class Pedido {
         this.produtos.add(p);
     }
 
+    public void delProduto (Produto p) {
+        this.produtos.remove(p);
+    }
+
     public ArrayList<Produto> getProdutos () {
         return this.produtos;
     }
