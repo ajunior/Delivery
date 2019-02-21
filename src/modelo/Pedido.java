@@ -12,7 +12,7 @@ public class Pedido {
     private double total;
     private String entregador;
     private boolean fechado;
-    private ArrayList<Produto> produtos;
+    private ArrayList<Produto> produtos = new ArrayList<Produto>();
     private Cliente cliente;
 
     public Pedido () {
@@ -72,6 +72,10 @@ public class Pedido {
 
     public ArrayList<Produto> getProdutos () {
         return this.produtos;
+    }
+
+    public int getQtdeProdutos () {
+        return produtos.size();
     }
 
     public void setCliente (Cliente cliente) {

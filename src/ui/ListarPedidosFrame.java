@@ -44,10 +44,8 @@ public class ListarPedidosFrame extends JDialog {
         for (Pedido p : resultado) {
             tblListaPedidos.setValueAt(p.getId(), linha, 0);
             tblListaPedidos.setValueAt(p.getData().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")), linha, 1);
-
             tblListaPedidos.setValueAt(p.getCliente(), linha, 2);
-            ArrayList<Produto> pd = p.getProdutos();
-            //tblListaPedidos.setValueAt(pd.size(), linha, 3);
+            tblListaPedidos.setValueAt(p.getQtdeProdutos(), linha, 3);
             tblListaPedidos.setValueAt(p.getFechado() ? "Fechado" : "Aberto", linha, 4);
             tblListaPedidos.setValueAt(p.getEntregador(), linha, 5);
             linha++;
