@@ -1,6 +1,7 @@
 package fachada;
 
 import modelo.Cliente;
+import modelo.EnviarEmail;
 import modelo.Pedido;
 import modelo.Produto;
 import repositorio.Restaurante;
@@ -221,8 +222,8 @@ public class Fachada {
     // -------------------------------------
     //  ENVIAR PEDIDO
     // -------------------------------------
-    public static void enviarPedido(String telefone, String email) {
-        //
+    public static void enviarPedido(String telefone, String senha) {
+        EnviarEmail email = new EnviarEmail(telefone, senha);
     }
 
     // -------------------------------------
