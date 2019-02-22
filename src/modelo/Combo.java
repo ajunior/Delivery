@@ -10,6 +10,10 @@ public class Combo extends Produto {
         // Empty
     }
 
+    public Combo (String nome) {
+        this.nome = nome;
+    }
+
     public Combo(String nome, ArrayList<Produto> p) {
         this.nome = nome;
         this.componentes = p;

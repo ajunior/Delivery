@@ -1,9 +1,6 @@
 package fachada;
 
-import modelo.Cliente;
-import modelo.EnviarEmail;
-import modelo.Pedido;
-import modelo.Produto;
+import modelo.*;
 import repositorio.Restaurante;
 
 import java.time.LocalDateTime;
@@ -244,6 +241,9 @@ public class Fachada {
     // -------------------------------------
     //  CRIAR COMBO
     // -------------------------------------
+    public static void criarCombo(String nome) throws Exception {
+        Combo combo = new Combo(nome);
+    }
 
     // -------------------------------------
     //  EXCLUIR PEDIDO
