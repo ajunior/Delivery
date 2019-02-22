@@ -1,10 +1,9 @@
 package repositorio;
 
-import modelo.Cliente;
-import modelo.Pedido;
-import modelo.Produto;
-import modelo.SortByProduct;
+import com.itextpdf.text.DocumentException;
+import modelo.*;
 
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.TreeMap;
@@ -144,7 +143,7 @@ public class Restaurante {
         return null;
     }
 
-    public Pedido fecharPedido(int id, String entregador, double txEntrega) {
+    public Pedido fecharPedido(int id, String entregador, double txEntrega) throws FileNotFoundException, DocumentException {
         double valor = txEntrega;
 
         for (Pedido p: pedidos)
@@ -156,6 +155,8 @@ public class Restaurante {
                     valor += prod.getPreco();
 
                 p.setTotal(valor);
+                p.getCliente().addPedido(p);
+                CriarPDF pdf = new CriarPDF(p);
                 return p;
             }
         return null;
