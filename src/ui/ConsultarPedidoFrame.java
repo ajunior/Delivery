@@ -84,11 +84,11 @@ public class ConsultarPedidoFrame extends JDialog {
         lblProdutos.setBounds(10, 140, 80, 20);
         contentPanel.add(lblProdutos);
 
-        String[] tblHeader = {"Id", "Nome", "Preço (R$)"};
+        String[] tblHeader = {"Código", "Nome", "Preço (R$)"};
 
-        ArrayList<Pedido> resultado = Fachada.listarPedidos();
+        //ArrayList<Pedido> resultado = Fachada.listarPedidos();
 
-        DefaultTableModel model = new DefaultTableModel(tblHeader, resultado.size());
+        DefaultTableModel model = new DefaultTableModel(tblHeader, 0);
         tblListaProdutos = new JTable(model);
         contentPanel.add(tblListaProdutos);
 
@@ -96,11 +96,6 @@ public class ConsultarPedidoFrame extends JDialog {
         jsp.setBounds(10, 175, 565, 340);
         contentPanel.add(jsp);
         jsp.setViewportView(tblListaProdutos);
-
-        tblListaProdutos = new JTable(model);
-        tblListaProdutos.setBounds(10, 175, 565, 340);
-        contentPanel.add(tblListaProdutos);
-
 
         lblQtdeProdutos = new JLabel("Quantidade de Produtos:");
         lblQtdeProdutos.setBounds(10, 525, 180, 20);
@@ -120,6 +115,7 @@ public class ConsultarPedidoFrame extends JDialog {
                         String telefone = textFieldTelefone.getText();
 
                         Pedido p = Fachada.consultarPedido(telefone);
+
                         if (p == null)
                             JOptionPane.showConfirmDialog(null,
                                     "Não há pedido aberto para o cliente: \" + telefone + \".\"" +  p.getId() + ".",
@@ -134,9 +130,14 @@ public class ConsultarPedidoFrame extends JDialog {
 
                             ArrayList<Produto> produtos = p.getProdutos();
 
+//                            DefaultTableModel model = new DefaultTableModel(tblHeader, produtos.size());
+//                            tblListaProdutos = new JTable(model);
+//                            contentPanel.add(tblListaProdutos);
+
+                            model.setRowCount(produtos.size());
+
                             for (Produto prod : produtos) {
                                 tblListaProdutos.setValueAt(prod.getId(), linha, 0);
-                                //tblListaProdutos.setValueAt(p.getData().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss")), linha, 1);
                                 tblListaProdutos.setValueAt(prod.getNome(), linha, 1);
                                 tblListaProdutos.setValueAt(prod.getPreco(), linha, 2);
                                 linha++;

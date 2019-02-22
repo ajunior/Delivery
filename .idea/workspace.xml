@@ -101,8 +101,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="92" column="43" lean-forward="true" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+            <state relative-caret-position="592">
+              <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ui/ListarPedidosPorClienteFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="1087">
+              <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -270,7 +270,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550789607593" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550835818740" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -322,18 +322,18 @@
       <workItem from="1548188522754" duration="3263000" />
       <workItem from="1548221400243" duration="20241000" />
       <workItem from="1548543610708" duration="10830000" />
-      <workItem from="1550689920472" duration="32059000" />
+      <workItem from="1550689920472" duration="33911000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169264000" />
+    <option name="totallyTimeSpent" value="171116000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="3773" height="2133" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17601287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17601287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -342,7 +342,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21031547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21031547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -621,13 +621,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/FecharPedidoFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="915">
-          <caret line="68" column="177" selection-start-line="68" selection-start-column="177" selection-end-line="68" selection-end-column="177" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modelo/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -700,10 +693,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/FecharPedidoFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="68" column="177" selection-start-line="68" selection-start-column="177" selection-end-line="68" selection-end-column="177" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/ListarPedidosPorClienteFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        <state relative-caret-position="1087">
+          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -712,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="92" column="43" lean-forward="true" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+        <state relative-caret-position="592">
+          <caret line="97" column="46" selection-start-line="97" selection-start-column="46" selection-end-line="97" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
