@@ -213,6 +213,30 @@ public class MainFrame extends JFrame {
             }
         });
 
+        JMenuItem menuPedidoEnviar = new JMenuItem("Enviar Email");
+        menuPedido.add(menuPedidoEnviar);
+        menuBar.add(menuPedido);
+        menuPedidoEnviar.setMnemonic(KeyEvent.VK_V);
+        menuPedidoEnviar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new EnviarPedidoFrame().setVisible(true);
+            }
+        });
+
+        // MENU COMBO
+        JMenu menuCombo = new JMenu("Combo");
+        JMenuItem menuComboCriar = new JMenuItem("Criar Combo");
+        menuCombo.add(menuComboCriar);
+        menuBar.add(menuCombo);
+        menuComboCriar.setMnemonic(KeyEvent.VK_C);
+        menuComboCriar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new CriarComboFrame().setVisible(true);
+            }
+        });
+
         // MENU RELATÓRIO
         JMenu menuRelatorio = new JMenu("Relatório");
         JMenuItem menuRelatorioArrecadacao = new JMenuItem("Arrecadação");

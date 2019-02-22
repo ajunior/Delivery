@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c23c13-d978-49b0-9e4f-677a295fe171" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modelo/EnviarEmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/CriarComboFrame.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ui/EnviarPedidoFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdf/pedido.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/pdf/pedido.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fachada/Fachada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fachada/Fachada.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Combo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Combo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/EnviarEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/EnviarEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modelo/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/modelo/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ui/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ui/MainFrame.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fachada/Fachada.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="922">
-              <caret line="225" column="61" selection-start-line="225" selection-start-column="61" selection-end-line="225" selection-end-column="61" />
+            <state relative-caret-position="679">
+              <caret line="224" column="84" selection-start-line="224" selection-start-column="84" selection-end-line="224" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#996#1005#0" expanded="true" />
@@ -29,14 +35,67 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modelo/Produto.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/MainFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="782">
+              <caret line="235" column="30" selection-start-line="235" selection-start-column="30" selection-end-line="235" selection-end-column="30" />
               <folding>
-                <element signature="e#193#201#0" expanded="true" />
-                <element signature="e#830#831#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2806#2807#0" expanded="true" />
+                <element signature="e#2882#2883#0" expanded="true" />
+                <element signature="e#3236#3237#0" expanded="true" />
+                <element signature="e#3310#3311#0" expanded="true" />
+                <element signature="e#3719#3720#0" expanded="true" />
+                <element signature="e#3795#3796#0" expanded="true" />
+                <element signature="e#4149#4150#0" expanded="true" />
+                <element signature="e#4223#4224#0" expanded="true" />
+                <element signature="e#4611#4612#0" expanded="true" />
+                <element signature="e#4682#4683#0" expanded="true" />
+                <element signature="e#5047#5048#0" expanded="true" />
+                <element signature="e#5123#5124#0" expanded="true" />
+                <element signature="e#5479#5480#0" expanded="true" />
+                <element signature="e#5553#5554#0" expanded="true" />
+                <element signature="e#5876#5877#0" expanded="true" />
+                <element signature="e#5949#5950#0" expanded="true" />
+                <element signature="e#6324#6325#0" expanded="true" />
+                <element signature="e#6407#6408#0" expanded="true" />
+                <element signature="e#6737#6738#0" expanded="true" />
+                <element signature="e#6812#6813#0" expanded="true" />
+                <element signature="e#7137#7138#0" expanded="true" />
+                <element signature="e#7211#7212#0" expanded="true" />
+                <element signature="e#7559#7560#0" expanded="true" />
+                <element signature="e#7631#7632#0" expanded="true" />
+                <element signature="e#7984#7985#0" expanded="true" />
+                <element signature="e#8057#8058#0" expanded="true" />
+                <element signature="e#8411#8412#0" expanded="true" />
+                <element signature="e#8483#8484#0" expanded="true" />
+                <element signature="e#8958#8959#0" expanded="true" />
+                <element signature="e#9029#9030#0" expanded="true" />
+                <element signature="e#9500#9501#0" expanded="true" />
+                <element signature="e#9571#9572#0" expanded="true" />
+                <element signature="e#9977#9978#0" expanded="true" />
+                <element signature="e#10042#10043#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/CriarComboFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/ListarClientesFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -45,36 +104,30 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modelo/Pedido.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+            <state relative-caret-position="975">
+              <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
               <folding>
                 <element signature="e#392#401#0" expanded="true" />
                 <element signature="e#1508#1509#0" expanded="true" />
-                <element signature="e#1548#1549#0" expanded="true" />
-                <element signature="e#1591#1592#0" expanded="true" />
-                <element signature="e#1628#1629#0" expanded="true" />
+                <element signature="e#1547#1548#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/ListarPedidosFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/modelo/Combo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="40" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="40" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+                <element signature="e#376#377#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
+                <element signature="e#584#585#0" expanded="true" />
+                <element signature="e#673#674#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/FecharPedidoFrame.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="915">
-              <caret line="68" column="177" selection-start-line="68" selection-start-column="177" selection-end-line="68" selection-end-column="177" />
             </state>
           </provider>
         </entry>
@@ -83,7 +136,7 @@
         <entry file="file://$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="292">
-              <caret line="77" selection-start-line="77" selection-end-line="77" />
+              <caret line="29" column="36" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="29" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,48 +145,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ui/ListarPedidosPorClienteFrame.java">
+        <entry file="file://$PROJECT_DIR$/src/ui/CadastrarProdutoFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1087">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/repositorio/Restaurante.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1282">
-              <caret line="162" column="5" selection-start-line="162" selection-start-column="5" selection-end-line="162" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#282#291#0" expanded="true" />
-                <element signature="e#350#358#0" expanded="true" />
-                <element signature="e#424#441#0" expanded="true" />
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#614#615#0" expanded="true" />
-                <element signature="e#652#653#0" expanded="true" />
-                <element signature="e#691#692#0" expanded="true" />
-                <element signature="e#1813#1814#0" expanded="true" />
-                <element signature="e#1868#1869#0" expanded="true" />
-                <element signature="e#1921#1922#0" expanded="true" />
-                <element signature="e#1952#1953#0" expanded="true" />
-                <element signature="e#2306#2307#0" expanded="true" />
-                <element signature="e#4278#4279#0" expanded="true" />
-                <element signature="e#4352#4353#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/modelo/CriarPDF.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+            <state relative-caret-position="270">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="18" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -144,12 +159,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/modelo/EnviarEmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="997">
-              <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+            <state relative-caret-position="390">
+              <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1325#1521#0" expanded="true" />
                 <element signature="e#1520#1521#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ui/EnviarPedidoFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -196,8 +223,6 @@
         <option value="$PROJECT_DIR$/src/modelo/ProdutoAlfabeticamenteOrdenado.java" />
         <option value="$PROJECT_DIR$/src/ui/CadastrarClienteFrame.java" />
         <option value="$PROJECT_DIR$/src/modelo/SortByProduct.java" />
-        <option value="$PROJECT_DIR$/src/modelo/Combo.java" />
-        <option value="$PROJECT_DIR$/src/ui/MainFrame.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/ui/ListarClientesFrame.java" />
         <option value="$PROJECT_DIR$/src/modelo/Cliente.java" />
@@ -205,7 +230,6 @@
         <option value="$PROJECT_DIR$/src/ui/CadastrarProdutoFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/ListarPedidosPorClienteFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/AdicionarProdutoFrame.java" />
-        <option value="$PROJECT_DIR$/src/modelo/Pedido.java" />
         <option value="$PROJECT_DIR$/src/modelo/Teste1.java" />
         <option value="$PROJECT_DIR$/src/ui/RetirarProdutoFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/ListarPedidosFrame.java" />
@@ -215,9 +239,14 @@
         <option value="$PROJECT_DIR$/src/ui/CancelarPedidoFrame.java" />
         <option value="$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java" />
         <option value="$PROJECT_DIR$/src/modelo/CriarPDF.java" />
-        <option value="$PROJECT_DIR$/src/modelo/EnviarEmail.java" />
-        <option value="$PROJECT_DIR$/src/fachada/Fachada.java" />
         <option value="$PROJECT_DIR$/src/repositorio/Restaurante.java" />
+        <option value="$PROJECT_DIR$/src/ui/EnviarPedidoFrame.java" />
+        <option value="$PROJECT_DIR$/src/modelo/EnviarEmail.java" />
+        <option value="$PROJECT_DIR$/src/modelo/Pedido.java" />
+        <option value="$PROJECT_DIR$/src/modelo/Combo.java" />
+        <option value="$PROJECT_DIR$/src/ui/MainFrame.java" />
+        <option value="$PROJECT_DIR$/src/ui/CriarComboFrame.java" />
+        <option value="$PROJECT_DIR$/src/fachada/Fachada.java" />
       </list>
     </option>
   </component>
@@ -279,7 +308,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550839659473" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550848617852" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/poo/projeto/GerarPDF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -331,18 +360,18 @@
       <workItem from="1548188522754" duration="3263000" />
       <workItem from="1548221400243" duration="20241000" />
       <workItem from="1548543610708" duration="10830000" />
-      <workItem from="1550689920472" duration="37456000" />
+      <workItem from="1550689920472" duration="44994000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174661000" />
+    <option name="totallyTimeSpent" value="182199000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="3773" height="2133" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17601287" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17601287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -351,7 +380,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21031547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21031547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -361,7 +390,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32448673" />
+      <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32448673" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -487,67 +516,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/Combo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ListarClientesFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="197" column="65" selection-start-line="197" selection-start-column="65" selection-end-line="197" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2806#2807#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#3236#3237#0" expanded="true" />
-            <element signature="e#3310#3311#0" expanded="true" />
-            <element signature="e#3719#3720#0" expanded="true" />
-            <element signature="e#3795#3796#0" expanded="true" />
-            <element signature="e#4149#4150#0" expanded="true" />
-            <element signature="e#4223#4224#0" expanded="true" />
-            <element signature="e#4611#4612#0" expanded="true" />
-            <element signature="e#4682#4683#0" expanded="true" />
-            <element signature="e#5047#5048#0" expanded="true" />
-            <element signature="e#5123#5124#0" expanded="true" />
-            <element signature="e#5479#5480#0" expanded="true" />
-            <element signature="e#5553#5554#0" expanded="true" />
-            <element signature="e#5876#5877#0" expanded="true" />
-            <element signature="e#5949#5950#0" expanded="true" />
-            <element signature="e#6324#6325#0" expanded="true" />
-            <element signature="e#6407#6408#0" expanded="true" />
-            <element signature="e#6737#6738#0" expanded="true" />
-            <element signature="e#6812#6813#0" expanded="true" />
-            <element signature="e#7137#7138#0" expanded="true" />
-            <element signature="e#7211#7212#0" expanded="true" />
-            <element signature="e#7559#7560#0" expanded="true" />
-            <element signature="e#7631#7632#0" expanded="true" />
-            <element signature="e#7979#7980#0" expanded="true" />
-            <element signature="e#8051#8052#0" expanded="true" />
-            <element signature="e#8522#8523#0" expanded="true" />
-            <element signature="e#8593#8594#0" expanded="true" />
-            <element signature="e#8999#9000#0" expanded="true" />
-            <element signature="e#9064#9065#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -559,16 +531,6 @@
             <element signature="e#231#239#0" expanded="true" />
             <element signature="e#1143#1144#0" expanded="true" />
             <element signature="e#1173#1174#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/CadastrarProdutoFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -657,30 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/Pedido.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-          <folding>
-            <element signature="e#392#401#0" expanded="true" />
-            <element signature="e#1508#1509#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1628#1629#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/modelo/Produto.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -699,30 +637,6 @@
           <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/modelo/EnviarEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="997">
-          <caret line="75" column="41" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1325#1521#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fachada/Fachada.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="922">
-          <caret line="225" column="61" selection-start-line="225" selection-start-column="61" selection-end-line="225" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#996#1005#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -747,6 +661,148 @@
             <element signature="e#2306#2307#0" expanded="true" />
             <element signature="e#4278#4279#0" expanded="true" />
             <element signature="e#4352#4353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ConsultarPedidoFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="29" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/CadastrarProdutoFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="18" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/EnviarEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="52" lean-forward="true" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1325#1521#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/ListarClientesFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="48" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/Pedido.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+          <folding>
+            <element signature="e#392#401#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+            <element signature="e#1547#1548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/MainFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="235" column="30" selection-start-line="235" selection-start-column="30" selection-end-line="235" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2806#2807#0" expanded="true" />
+            <element signature="e#2882#2883#0" expanded="true" />
+            <element signature="e#3236#3237#0" expanded="true" />
+            <element signature="e#3310#3311#0" expanded="true" />
+            <element signature="e#3719#3720#0" expanded="true" />
+            <element signature="e#3795#3796#0" expanded="true" />
+            <element signature="e#4149#4150#0" expanded="true" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4611#4612#0" expanded="true" />
+            <element signature="e#4682#4683#0" expanded="true" />
+            <element signature="e#5047#5048#0" expanded="true" />
+            <element signature="e#5123#5124#0" expanded="true" />
+            <element signature="e#5479#5480#0" expanded="true" />
+            <element signature="e#5553#5554#0" expanded="true" />
+            <element signature="e#5876#5877#0" expanded="true" />
+            <element signature="e#5949#5950#0" expanded="true" />
+            <element signature="e#6324#6325#0" expanded="true" />
+            <element signature="e#6407#6408#0" expanded="true" />
+            <element signature="e#6737#6738#0" expanded="true" />
+            <element signature="e#6812#6813#0" expanded="true" />
+            <element signature="e#7137#7138#0" expanded="true" />
+            <element signature="e#7211#7212#0" expanded="true" />
+            <element signature="e#7559#7560#0" expanded="true" />
+            <element signature="e#7631#7632#0" expanded="true" />
+            <element signature="e#7984#7985#0" expanded="true" />
+            <element signature="e#8057#8058#0" expanded="true" />
+            <element signature="e#8411#8412#0" expanded="true" />
+            <element signature="e#8483#8484#0" expanded="true" />
+            <element signature="e#8958#8959#0" expanded="true" />
+            <element signature="e#9029#9030#0" expanded="true" />
+            <element signature="e#9500#9501#0" expanded="true" />
+            <element signature="e#9571#9572#0" expanded="true" />
+            <element signature="e#9977#9978#0" expanded="true" />
+            <element signature="e#10042#10043#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/modelo/Combo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#342#343#0" expanded="true" />
+            <element signature="e#376#377#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#673#674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/CriarComboFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ui/EnviarPedidoFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="48" lean-forward="true" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fachada/Fachada.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="679">
+          <caret line="224" column="84" selection-start-line="224" selection-start-column="84" selection-end-line="224" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#996#1005#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
           </folding>
         </state>
       </provider>

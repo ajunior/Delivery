@@ -4,19 +4,35 @@ import java.util.ArrayList;
 
 public class Combo extends Produto {
     private String nome;
-    private ArrayList<Produto> componentes;
+    private ArrayList<Produto> componentes = new ArrayList<>();
 
     public Combo () {
         // Empty
     }
 
-    //@Override
-    public Double getPreco(Double descontoCombo) {
-        Double soma = 0.0;
+    public Combo(String nome, ArrayList<Produto> p) {
+        this.nome = nome;
+        this.componentes = p;
+    }
 
-        for(Produto p : componentes)
-            soma += p.getPreco();
+    public void adicionarComponente(Produto p) {
+        componentes.add(p);
+    }
 
-        return soma - (soma * descontoCombo);
+
+    public ArrayList<Produto> getComponentes() {
+        return componentes;
+    }
+
+
+    public Double getPreco() {
+        Double valor =  super.getPreco();
+        return valor - (valor * 0.10);
+    }
+
+
+    @Override
+    public String toString() {
+        return "Combo [componentes=" + componentes + " Preço= "+ getPreco() + "]";
     }
 }

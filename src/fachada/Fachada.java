@@ -222,7 +222,7 @@ public class Fachada {
     // -------------------------------------
     //  ENVIAR PEDIDO
     // -------------------------------------
-    public static void enviarPedido(String telefone, String senha) {
+    public static void enviarPedido(String telefone, String senha) throws Exception {
         EnviarEmail email = new EnviarEmail(telefone, senha);
     }
 

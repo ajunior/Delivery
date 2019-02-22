@@ -22,9 +22,9 @@ import javax.mail.internet.MimeMessage.RecipientType;
 
 public class EnviarEmail {
 
-    public EnviarEmail(String telefone, String senha) {
+    public EnviarEmail(String telefone, String senha) throws MessagingException {
 
-        final String email = "adjamiltonjr@gmail.com";
+        final String email = "ajunior.ee@gmail.com";
         final String passwd = senha;
 
         //Setting up configurations for the email connection to the Google SMTP server using TLS
